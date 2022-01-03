@@ -1,0 +1,114 @@
+*{
+    margin: 0em;
+    padding: 0em;
+}
+.barra{
+  text-align: center; 
+  height: 3.125em;
+  width: auto;
+}
+.RyMimag{
+    width: 28.125em;
+    height: 12.5em;
+    max-width: 100%; 
+    height: auto;
+    text-align: center;
+}
+.title{
+   text-align: center;
+   padding: 1.25em;
+}
+.logo{
+    width: 25em;
+    height:12.5em;
+    max-width: 100%; 
+    height: auto;
+}
+body{
+    background-color: rgb(1, 8, 4);
+}
+main{
+    text-align: center;
+}
+.text{
+    color: white;
+    font-size: 1.25em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+.buttons{
+   width: 100%;
+   text-align:center;
+   display: inline-flex;
+   text-align: center;
+   padding-left: 25%;
+}
+
+.Rick{
+  width: 12.5em;
+  height:12.5em;
+  
+  padding-right: 20%;
+}
+.Morty{
+    width: 11.25em;
+    height: 11.25em;
+    padding-left: 85%;
+  
+  }
+.play{
+    background-color: green;
+    font-size: 1.25em;
+    padding: .625em;
+    border: black;
+    border-radius: .625em;
+}
+.botonJugar{
+    text-align: center;
+}
+.copyright{
+    color: white;
+    text-align: center;
+    padding-bottom: .3125em;
+}
+/*@media screen and (min-width: 480px) {
+    .text{font-size:1.5625em;
+    }
+}
+ para 980px o menos 
+@media screen and (max-width:980px) {
+    body{
+        width:98%;
+    }
+    main{
+        width:68%;
+    }
+}
+
+/* para 700px o menos 
+@media screen and (max-width:700px) {
+    body {
+        width:96%;
+    }
+    .text {
+        font-size:1.2em;
+    }
+    .buttons {
+        margin-right:.3125em;
+        margin-left: .3125em;
+    }
+
+}
+
+/* para 480px o menos 
+@media screen and (max-width:480px) {//
+    body{//
+        width:80%;
+    }//
+    .buttons{//
+        width: 60%;
+    }//
+    .text {//
+        font-size:80%;
+    }//
+}*/
