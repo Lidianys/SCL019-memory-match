@@ -2,8 +2,8 @@
 // Para incluir los diferentes sets de cartas podemos _importar_ el archivo
 // JavasSript que contenga el `export` correspondiente...
 //
- import pokemon from '../data/pokemon/pokemon.js';
- console.log(pokemon);
+ import RickyMorty from '../data/RickyMorty/RickyMorty.js';
+ console.log(RickyMorty);
 //
 // O alternativamente podríamos cargar el JSON de forma asíncrona usando
 // `fetch` en el momento que consideremos necesario.

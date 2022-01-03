@@ -8,7 +8,7 @@
   width: auto;
 }
 .RyMimag{
-    width: 28.125em;
+    width: 20em;
     height: 12.5em;
     max-width: 100%; 
     height: auto;
@@ -16,10 +16,10 @@
 }
 .title{
    text-align: center;
-   padding: 1.25em;
+   padding: 1.50em;
 }
 .logo{
-    width: 25em;
+    width: 18em;
     height:12.5em;
     max-width: 100%; 
     height: auto;
@@ -32,44 +32,33 @@ main{
 }
 .text{
     color: white;
-    font-size: 1.25em;
+    font-size: 1.15em;
     padding-left: 2.5em;
     padding-right: 2.5em;
 }
 .buttons{
    width: 100%;
    text-align:center;
-   display: inline-flex;
+   display: inline-block;
    text-align: center;
-   padding-left: 25%;
 }
 
 .Rick{
-  width: 12.5em;
-  height:12.5em;
-  
-  padding-right: 20%;
+  width: 11.5em;
+  height:11.5em;  
+  padding: 1.5625em;
+  padding-right: 8.125em;
 }
 .Morty{
-    width: 11.25em;
-    height: 11.25em;
-    padding-left: 85%;
-  
+    width: 10.25em;
+    height: 10.25em;
+    padding: 1.5625em;
   }
-.play{
-    background-color: green;
-    font-size: 1.25em;
-    padding: .625em;
-    border: black;
-    border-radius: .625em;
-}
-.botonJugar{
-    text-align: center;
-}
+
 .copyright{
     color: white;
     text-align: center;
-    padding-bottom: .3125em;
+    padding-bottom: 0em;
 }
 /*@media screen and (min-width: 480px) {
     .text{font-size:1.5625em;
