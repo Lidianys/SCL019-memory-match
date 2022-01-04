@@ -24,7 +24,7 @@
     max-width: 100%; 
     height: auto;
 }
-body{
+body#portada{
     background-color: rgb(1, 8, 4);
 }
 main{
@@ -60,6 +60,12 @@ main{
     text-align: center;
     padding-bottom: 0em;
 }
+/*css a las dos paginas de memory match*/
+ body#second{
+     background-image: url("secondfondo.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
 /*@media screen and (min-width: 480px) {
     .text{font-size:1.5625em;
     }
