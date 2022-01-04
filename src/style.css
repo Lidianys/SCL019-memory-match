@@ -24,9 +24,23 @@
     max-width: 100%; 
     height: auto;
 }
+<<<<<<< HEAD
 body#portada{
+=======
+body {
+     background-image: url(fondoEstrellas.jpg);
+>>>>>>> 4dc750a5196769f3931f16d789a17e47d38e56e9
     background-color: rgb(1, 8, 4);
+    
 }
+.fondo2{
+    background-image: url(fondoCartas.jpg);
+    max-width: 100%;
+    max-height: 90%;
+    background-position: center center;
+    background-size: cover; 
+}
+
 main{
     text-align: center;
 }
@@ -60,12 +74,27 @@ main{
     text-align: center;
     padding-bottom: 0em;
 }
+<<<<<<< HEAD
 /*css a las dos paginas de memory match*/
  body#second{
      background-image: url("secondfondo.jpg");
      background-size: cover;
      background-repeat: no-repeat;
  }
+=======
+header {
+	width:100%;
+}
+header nav {
+	width:150%;
+	max-width:px;
+	margin:20px auto;
+}
+h1{
+    color: aliceblue;
+}
+
+>>>>>>> 4dc750a5196769f3931f16d789a17e47d38e56e9
 /*@media screen and (min-width: 480px) {
     .text{font-size:1.5625em;
     }
