@@ -27,7 +27,7 @@
 }
 /*fondo de home*/
 body#portada{
-     background-image: url(fondoEstrellas.jpg);
+     background-image: url(img/fondoEstrellas.jpg);
 }
 /*main de home*/
 main{
@@ -46,18 +46,31 @@ main{
    text-align:center;
    display: inline-block;
    text-align: center;
+   color: white;
+   font-size: 1.05em;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   
+
 }
 
 .Rick{
   width: 11.5em;
   height:11.5em;  
-  padding: 1.5625em;
-  padding-right: 8.125em;
-}
+  /*padding: 1.5625em;*/
+  /*padding-right: 8.125em;*/
+  border-radius: 1.9em;
+  box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
+  
+ }
 .Morty{
-    width: 10.25em;
-    height: 10.25em;
-    padding: 1.5625em;
+    width: 11.25em;
+    height: 11.25em;
+    /*padding: 1.5625em;*/
+    box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
+    border-radius: 1.9em;
+
   }
 /*copyright de las 3 páginas*/
 .copyright{
@@ -67,7 +80,7 @@ main{
 }
 /* fondo de  paginas de memory match*/
  .second{
-    background-image: url(fondoCartas.jpg);
+    background-image: url(img/fondoCartas.jpg);
     background-position: center center;
     background-size: cover; 
     background-repeat: no-repeat;
@@ -87,6 +100,16 @@ h1{
 .contenedor-cards{
   
     padding: 200px;
+}
+@media screen and (max-width: 700px) {
+    .buttom {   
+      flex-direction: column;
+      flex: 100%;
+      
+      }
+    .text{
+        
+    }
 }
 /*@media screen and (min-width: 480px) {
     .text{font-size:1.5625em;
