@@ -1,14 +1,14 @@
 export default {
   name: 'RickyMorty',
   items: [
-    { id: 'img1', image: 'img1.jpn', bgColor: '#339933' },
-    { id: 'img2', image: 'img2.jpn', bgColor: '#339933' },
-    { id: 'img3', image: 'img3.jpn', bgColor: '#339933' },
-    { id: 'img4', image: 'img4.jpn', bgColor: '#F05032' },
-    { id: 'img5', image: 'img5.jpn', bgColor: '#F05032' },
-    { id: 'img6', image: 'img6.jpn', bgColor: '#F05032' },
-    { id: 'img7', image: 'img7.jpn', bgColor: '#1572B6' },
-    { id: 'img8', image: 'img8.jpn', bgColor: '#1572B6' },
-    { id: 'img9', image: 'img9.jpn', bgColor: '#1572B6' },
+    { id: 'img1', image: 'https://indiehoy.com/wp-content/uploads/2020/07/rick-morty.jpg'},
+    { id: 'img2', image: 'https://i.pinimg.com/originals/53/e7/3d/53e73d572e470f38dbb3b9e1333b17eb.jpg'},
+    { id: 'img3', image: 'img3.jpg'},
+    { id: 'img4', image: 'img4.jpg'},
+    { id: 'img5', image: 'img5.jpg'},
+    { id: 'img6', image: 'img6.jpg'},
+    { id: 'img7', image: 'img7.jpg'},
+    { id: 'img8', image: 'img8.jpg'},
+    { id: 'img9', image: 'img9.jpg'},
   ],
 };

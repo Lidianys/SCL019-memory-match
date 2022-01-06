@@ -4,13 +4,32 @@
 //
  import RickyMorty from '../data/RickyMorty/RickyMorty.js';
  //console.log(RickyMorty);
+let elements= RickyMorty.items;
+//let cards;
+//let image = document.createElement('prueba');
+//let frontFace = document.getElementById("front-face") ;
+let image;
+//let frontFace = 
+for(let i = 0; i < elements.length; i ++){
+  image += 
+  `<img src="${elements[i].image}" alt="imagenes">`;
+ 
+ //cards = elements[i].image;
+ //document.getElementById("prueba").innerHTML= cards;
+}
+document.getElementById("front-face").innerHTML= image;
+//console.log(cards);
 
-let cards= RickyMorty.items;
-console.log(cards);
+
+
+
+//let cards= RickyMorty.includes(RickyMorty.items);
+ //console.log("hola" + cards);
+//function showCard
 
 //for (let i=0; i<cards.length;i++)
   
-//document.getElementById("contenedor-cards").innerHTML = RickyMorty;
+//document.getElementById("front-face").innerHTML = cards;
 
 // O alternativamente podríamos cargar el JSON de forma asíncrona usando
 // `fetch` en el momento que consideremos necesario.
