@@ -3,9 +3,15 @@
 // JavasSript que contenga el `export` correspondiente...
 //
  import RickyMorty from '../data/RickyMorty/RickyMorty.js';
-// console.log(RickyMorty);
-document.getElementById("contenedor-cards").innerHTML = RickyMorty;
-//
+ //console.log(RickyMorty);
+
+let cards= RickyMorty.items;
+console.log(cards);
+
+//for (let i=0; i<cards.length;i++)
+  
+//document.getElementById("contenedor-cards").innerHTML = RickyMorty;
+
 // O alternativamente podríamos cargar el JSON de forma asíncrona usando
 // `fetch` en el momento que consideremos necesario.
 //
