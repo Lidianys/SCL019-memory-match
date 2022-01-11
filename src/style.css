@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/*gift de Rick y Morty*/
+/*gift de Rick y Morty
 .barra{
   text-align: center; 
   height: 3.125em;
@@ -17,7 +17,7 @@ img#RyMimag{
     height: auto;
     text-align: center;
 }
-/*nombre de la serie*/
+/*nombre de la serie
 .title{
    text-align: center;
    padding: 1.50em;
@@ -27,7 +27,7 @@ img#logo{
     height:12.5em;
     height: auto;
 }
-/*fondo de home*/
+/*fondo de home
 body#portada{
      background-image: url(img/fondoEstrellas.jpg);
      height: 100vh;
@@ -36,14 +36,14 @@ body#portada{
 main{
     text-align: center;
 } 
-/*texto en home*/
+/*texto en home
 .text{
     color: white;
     font-size: 1.15em;
     padding-left: 2.5em;
     padding-right: 2.5em;
 }
-/*botones de home*/
+/*botones de home
 .buttons{
    width: 100%;
    text-align:center;
@@ -61,8 +61,8 @@ main{
 .Rick{
   width: 11.5em;
   height:11.5em;  
-  /*padding: 1.5625em;*/
-  /*padding-right: 8.125em;*/
+  /*padding: 1.5625em;
+  /*padding-right: 8.125em;
   border-radius: 1.9em;
   box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
   
@@ -70,17 +70,17 @@ main{
 .Morty{
     width: 11.25em;
     height: 11.25em;
-    /*padding: 1.5625em;*/
+    /*padding: 1.5625em;
     box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
     border-radius: 1.9em;
   }
-/*copyright de las 3 páginas*/
+/*copyright de las 3 páginas
 .copyright{
     color: white;
     text-align: center;
     padding-bottom: 0em;
-}
-/* fondo de  paginas de memory match*/
+}*/
+ /*fondo de  paginas de memory match*/
  .second{
     background-image: url(img/fondoCartas.jpg);
     background-position: center center;
@@ -89,98 +89,61 @@ main{
     height: 100vh; 
 }
  
-header nav {
+/*header nav {
 	width:100%;
 	margin:20px auto;
    
 }
 h1{
     color: aliceblue;
-}
-
-.cardsContainer{  
-    width: 640px;
-    height: 640px;
-    margin:auto;
+}*/
+/*esto es section*/
+.memory-game {
+    width: 550px;
+    height: 530px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
+    perspective: 1000px;
 }
-/*[name=img]{
-    width: 25px;
-    height: 25px;
-    padding: 20px;
-    position: absolute;
-    border-radius: 15px;
-    border-color: royalblue;
-    background: red;
-
-}*/
-/*.cardsContainer{
-    
-    width: 640px;
-    height: 640px;
-    margin:auto;
-    display: flex;
-    flex-wrap: wrap;
-    
-}*/
-
-/*.memory-card{
-    
-    width:23%;
-    height: calc(33.333% -10px) ;
+  /*esto es el div*/
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
     margin: 5px;
     position: relative;
-    transform:scale(1);
-}*/
-.memory-game{
-    width:23%;
-    height: calc(33.333% -10px) ;
-    margin: 5px;
-    position: relative;
-    transform:scale(1);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
-.memory-game:active{
-    transform: scale(.92);
-    transition: transform .2s;
-}
-/*img{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: absolute;
-    border-radius: 5px;
-    background: cornsilk;
-}*/
-/*img{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: absolute;
-    border-radius: 5px;
-    background: cornsilk;
-}*/
-.cards{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: absolute;
-    border-radius: 5px;
-    background: cornsilk;
-}
-/*.img#cardsF{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: absolute;
-    border-radius: 5px;
-    background: cornsilk;
-
-}
-/*.contenedor-cards{
   
-    padding: 200px;
-}*/
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+/*.memory-card.flip {
+    transform: rotateY(180deg);
+  }*/
+  
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    position: absolute;
+    border-radius: 5px;
+    background: white;
+    backface-visibility: hidden;
+}
+  
+.front-face {
+    transform: rotateY(180deg);
+}
+  
+
+
 @media screen and (max-width: 700px) {
     .buttom {   
       flex-direction: column;
