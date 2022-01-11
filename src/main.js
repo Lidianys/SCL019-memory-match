@@ -1,8 +1,11 @@
-//import App from './components/App.js';
+import App from './components/App.js';
 import RickyMorty from '../data/RickyMorty/RickyMorty.js';
 
+//Se llama la función que crea los div
+document.body.onload = App;
 
 
+/*
 let elementsItems= RickyMorty.items;//definimos los elementos de la data
 let image=0; //definir imagen frontal de la carta
 let arrayCards = new Array();
@@ -11,7 +14,7 @@ let arrayCards = new Array();
 console.log(elementsItems);
 for(let j = 0; j < elementsItems.length; j ++){
   arrayCards[j]= arrayCards[j] + elementsItems[j].image;
-  console.log(arrayCards[j]);
+  //console.log(arrayCards[j]);
 }
 
 
@@ -42,7 +45,7 @@ for(let i = 1; i < elementsItems.length; i ++){
   dupCards.className= "memory-game";
   
 }
-console.log("hola" + arrayCards);
+//console.log("hola" + arrayCards);
 //console.log("hola" + arrayCards);
 /*function duplicateElements(array, times) {
     return array.reduce((res, current) => {

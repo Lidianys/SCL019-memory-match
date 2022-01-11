@@ -4,95 +4,75 @@
 //
  import RickyMorty from '../data/RickyMorty/RickyMorty.js';
  //console.log(RickyMorty);
+
+ let elementsItems= RickyMorty.items;//definimos los elementos de la dat
  
-let elementsItems= RickyMorty.items;//definimos los elementos de la dat
-let image=0; //definir imagen frontal de la carta
-let backImage; //definir imagen back de las cartas
-const allCards = document.querySelectorAll(".memory-game");
-
-for(let i = 1; i < elementsItems.length; i ++){
-  image = elementsItems[i].image;//almacena la src de las imagenes front
-  backImage = elementsItems[0].image;// almacena la src de las imagenes back
-  const newDiv = document.createElement('div');//crea una etiqueta div
-  const frontFace = document.createElement('img');// crea etiqueta img para imagenes front
-  const backFace = document.createElement("img");//crea etiqueta img para imagenes back
-  const frontCard = document.createTextNode(frontFace.src= image);// contiene las imagenes de front
-  const backCard = document.createTextNode(backFace.src= backImage);//contiene la imagen de back
-  frontFace.appendChild(frontCard);//pone las imagenes dentro de la etiqueta img de front
-  backFace.appendChild(backCard);//pone la imagen dentro de la etiqueta img de back
-  newDiv.appendChild(frontFace);//se pone la etiqueta img dentro del div
-  newDiv.appendChild(backFace);//se pone la etiqueta img dentro del div
-  document.getElementById('cardsContainer').appendChild(newDiv);//se crea el div dentro del select
-  console.log(frontFace);
-  newDiv.id = "memory-game";
-  frontFace.className = "cards";
-  backFace.className= "cards";
-  //backCard.className = "frontFace";
-
+ console.log("Hola elementsItems "+ elementsItems);
+ let arrayCard = new Array();
+ 
+ //-----Guardamos las img en un array---
+for (let i=1;i<elementsItems.length;i++){
+   arrayCard.push(elementsItems[i].image);
 }
-function flipCard() {
-  console.log("estoy clickeando");
-} 
+//console.log("holaaaa eres de tipo: "+typeof arrayCard);
+
+//---funcion Fisher-Yates Shuffle ----
+function shuffle(elementsItems) {
+  let currentIndex = elementsItems.length; 
+  let randomIndex =0;
+  let tempValue=0;
+  
+  while(currentIndex !== 0){
+    randomIndex=Math.floor(Math.random()*currentIndex);
+    currentIndex-=1;
+    tempValue= elementsItems[currentIndex];
+    elementsItems[currentIndex]=elementsItems[randomIndex];
+    elementsItems[randomIndex]=tempValue;
+  }
+  return elementsItems;
+  }
 
 
-
-allCards.forEach(card => card.addEventListener ("click", flipCard ));
-
-/*const App = (RickyMorty) => {
-  let elementsItems= RickyMorty.items;//definimos los elementos de la dat
+function App (){
   let image=0; //definir imagen frontal de la carta
-  let backImage; //definir imagen back de las cartas
-  
+  let backImage=0; //definir imagen back de las cartas 
+  shuffle(elementsItems); 
   for(let i = 1; i < elementsItems.length; i ++){
-    image = elementsItems[i].image;//almacena la src de las imagenes front
+    image= elementsItems[i].image;//almacena la src de las imagenes front
     backImage = elementsItems[0].image;// almacena la src de las imagenes back
-    const newDiv = document.createElement('div');//crea una etiqueta div
-    const frontFace = document.createElement('img');// crea etiqueta img para imagenes front
-    const backFace = document.createElement("img");//crea etiqueta img para imagenes back
-    const frontCard = document.createTextNode(frontFace.src= image);// contiene las imagenes de front
-    const backCard = document.createTextNode(backFace.src= backImage);//contiene la imagen de back
-    frontFace.appendChild(frontCard);//pone las imagenes dentro de la etiqueta img de front
-    backFace.appendChild(backCard);//pone la imagen dentro de la etiqueta img de back
-    newDiv.appendChild(frontFace);//se pone la etiqueta img dentro del div
-    newDiv.appendChild(backFace);//se pone la etiqueta img dentro del div
-    document.getElementById('cardsContainer').appendChild(newDiv);//se crea el div dentro del select
-    console.log(frontFace);
+//---- crea una etiqueta div y se le asigna una class-------------------
+    const newDiv = document.createElement("div");
+    newDiv.className= "memory-game";
+//---- crea etiquetas img para imagenes front y back / se le asinga una clase -- 
+    const frontFace = document.createElement("img");
+    //const backFace = document.createElement("img");
+    frontFace.className = "cards";
+    //backFace.className= "cards";
+//---- Se le asigna src a cada img de front y back   
+    const frontCard = document.createTextNode(frontFace.src= image);
+    //const backCard = document.createTextNode(backFace.src= backImage);
+//---- se inserta a cada nodo img su respectiva imagen -------  
+    frontFace.appendChild(frontCard);
+    //backFace.appendChild(backCard);
+//---- se inserta a cada nodo div su respectiva img -------  
+    newDiv.appendChild(frontFace);
+    //newDiv.appendChild(backFace);
+//---- se inserta al nodo Select los div -------  
+    document.getElementById('cardsContainer').appendChild(newDiv);
+    //console.log(frontFace);   
+    //backCard.className = "frontFace";
+  }
+}
 
+console.log(arrayCard);
 
-
-
-
-  //const el = document.createElement('div');
-  //const elemento = document.createElement('img');
-  //const contenido = document.createTextNode(elementsItems[i].image);
-  //elemento.src= image;
-  //document.getElementById().appendChild(elemento);
-  
-  
-  //el.className = 'App';
-  //el.textContent = 'Hola mundo!';
-
-  return newDiv;
-};
-}*/
-
-//export default App;
-
-
- /*esta funciona `<img src="${elementsItems[i].image}" alt="imagenes">`;
- 
- //cards = elements[i].image;
- //document.getElementById("prueba").innerHTML= cards;
-//document.querySelector('subtitulo').appendChild(elemento);
-//document.getElementById('subtitulo').appendChild(elemento);
-/*
-const App = () => {
+/*const App = () => {
   //const el = document.createElement('div');
   
   //el.className = 'App';
   //el.textContent = 'Hola mundo!';
 
-  return elemento;
+  return el;
 };*/
 
 export default App;
