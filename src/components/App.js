@@ -2,8 +2,10 @@
 // Para incluir los diferentes sets de cartas podemos _importar_ el archivo
 // JavasSript que contenga el `export` correspondiente...
 //
+
  import RickyMorty from '../data/RickyMorty/RickyMorty.js';
  //console.log(RickyMorty);
+
 
  let elementsItems= RickyMorty.items;//definimos los elementos de la dat
  
@@ -75,4 +77,61 @@ console.log(arrayCard);
   return el;
 };*/
 
-export default App;
+//let cardArray = new Array();
+let cardArray = RickyMorty.items;
+console.log(cardArray);
+let grid = document.querySelector(".grid"); 
+let scoreBoard = document.querySelector(".scoreBoard"); 
+let popup = document.querySelector(".popup"); 
+let playAgain = document.querySelector(".playAgain"); 
+let clickBoard = document.querySelector(".clickBoard"); 
+let imgs; 
+let cardsId = []; 
+let cardsSelected = []; 
+let cardsWon = 0; 
+let clicks = 0;
+
+//createBoard function para imprimir las imagenes y crear el tablero
+
+function createBoard(grid, array) { 
+  popup.style.display = "none"; 
+  array.forEach((arr, index) => { 
+  let img = document.createElement("img"); 
+  img.setAttribute("src", "blank.png");
+  img.setAttribute("data-id", index); 
+  grid.appendChild(img); 
+  })
+}
+
+// arrangeCard function
+
+function arrangeCard() { 
+  cardArray.sort(() => 0.5 - Math.random())
+}
+  
+  // flip Card function
+  function flipCard() { 
+  let selected = this.dataset.id;
+  cardsSelected.push(cardArray[selected].name); //puede que sea el id
+  cardsId.push(selected); 
+  this.classList.add("flip"); 
+  this.setAttribute("src", cardArray[selected].img); 
+  if (cardsId.length === 2) { 
+  setTimeout(checkForMatch, 500);
+  } 
+  }
+ function replay() { 
+    arrangeCard(); 
+    grid.innerHTML = "";
+    createBoard(grid, cardArray);
+    cardsWon = 0;
+    clicks = 0; 
+    clickBoard.innerHTML = 0; 
+    scoreBoard.innerHTML = 0; 
+    popup.style.display = "none"; 
+}
+
+
+
+
+//export default App;

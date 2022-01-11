@@ -1,3 +1,4 @@
+
 import App from './components/App.js';
 import RickyMorty from '../data/RickyMorty/RickyMorty.js';
 
@@ -53,23 +54,49 @@ for(let i = 1; i < elementsItems.length; i ++){
     }, []);
    
   }
- /* duplicateElements([arrayCards], 5);
-  for(let i = 1; i < arrayCards.length; i ++){
-   
-  }*/
- 
-/*function flipCard() {
-  console.log("estoy clickeando");
-} 
+  return this;
+  console.log("suflle" + cardArray);
+}*/
 
-cards.forEach(card => card.addEventListener ("click", flipCard ));*/
+ /* function shuffleArray(image) {
+  for (let i = image.length-1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [image[i], image[j]] = [image[j], image[i]];
+      console.log("invertido" + image);
+  }
+  console.log("invertido" + image);
+}*/
+
+/*function shuffle(image) {
+  let currentIndex = image.length, temporaryValue, randomIndex;
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = image[currentIndex];
+    image[currentIndex] = image[randomIndex];
+    image[randomIndex] = temporaryValue;
+  }
+  
+  return image;
+  console.log("suflle" + image);
+}*/
 
 
-//console.log("hpla" + cards);
+// arrangeCard function
+  /*function arrangeCard( cardArray) { 
+  cardArray.sort(() => 0.5 - Math.random())
+  console.log("funcion flip" + cardArray );
+}*/
+ /* function flipCard() { 
+  let selected = this.RickyMorty.id;
+  cardsSelected.push(cardArray[selected].name); //duda si es name o id
+  cardsId.push(selected); 
+  this.classList.add("flip"); 
+  this.setAttribute("src", cardArray[selected].image); 
+  if (cardsId.length === 2) { 
+  setTimeout(checkForMatch, 500);
+  console.log("entrando a la funcion flipcard");
+  } 
+}*/
+createBoard();
 
-
-
-
-
-
-//document.getElementById('root').appendChild(App());
