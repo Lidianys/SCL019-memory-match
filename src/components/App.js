@@ -1,4 +1,6 @@
+
 import RickyMorty from '../data/RickyMorty/RickyMorty.js';
+
 
  let elementsItems= RickyMorty.items;//definimos los elementos de la data
  
@@ -51,8 +53,8 @@ function App (){
     //elementsItems.addEventListener("click", function(){ alert("Hello World!"); });
    
   }
-  flipCard(cards);
-  console.log("estoy dando clcik");
+
+  
 }
 let cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
