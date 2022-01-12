@@ -1,6 +1,6 @@
 
 import App from './components/App.js';
-import RickyMorty from '../data/RickyMorty/RickyMorty.js';
+//import RickyMorty from '../data/RickyMorty/RickyMorty.js';
 
 //Se llama la función que crea los div
 document.body.onload = App;
@@ -98,5 +98,5 @@ for(let i = 1; i < elementsItems.length; i ++){
   console.log("entrando a la funcion flipcard");
   } 
 }*/
-createBoard();
+
 
