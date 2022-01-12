@@ -1,18 +1,9 @@
-//
-// Para incluir los diferentes sets de cartas podemos _importar_ el archivo
-// JavasSript que contenga el `export` correspondiente...
-//
+import RickyMorty from '../data/RickyMorty/RickyMorty.js';
 
- import RickyMorty from '../data/RickyMorty/RickyMorty.js';
- //console.log(RickyMorty);
-
-
- let elementsItems= RickyMorty.items;//definimos los elementos de la dat
+ let elementsItems= RickyMorty.items;//definimos los elementos de la data
  
- //console.log("holaaaa eres de tipo: "+typeof arrayCard);
-
 //---funcion Fisher-Yates Shuffle ----
-function shuffle(elementsItems) {
+function shuffle() {
   let currentIndex = elementsItems.length; 
   let randomIndex =0;
   let tempValue=0;
@@ -25,8 +16,8 @@ function shuffle(elementsItems) {
     elementsItems[randomIndex]=tempValue;
   }
   return elementsItems;
-  }
   
+}
 
 function App (){
   let image=0; //definir imagen frontal de la carta
@@ -47,58 +38,51 @@ function App (){
     //backFace.className= "back-face";
 //---- Se le asigna src a cada img de front y back   
     const frontCard = document.createTextNode(frontFace.src= image);
-    const backCard = document.createTextNode(backFace.src="data/RickyMorty/fondocards.png");
+    //const backCard = document.createTextNode(backFace.src="data/RickyMorty/fondocards.png");
 //---- se inserta a cada nodo img su respectiva imagen -------  
     frontFace.appendChild(frontCard);
-    backFace.appendChild(backCard);
+    //backFace.appendChild(backCard);
 //---- se inserta a cada nodo div su respectiva img -------  
     newDiv.appendChild(frontFace);
-    newDiv.appendChild(backFace);
+    //newDiv.appendChild(backFace);
 //---- se inserta al nodo Select los div -------  
     document.getElementById("memory-game").appendChild(newDiv);
     //console.log(frontFace);   
-    //backCard.className = "frontFace";
+    //backCard.className = "front-face";
+    //elementsItems.forEach(card => card,addEventListener("click",flipCard())); //flipCard es una función
+    //elementsItems.addEventListener("click", function(){ alert("Hello World!"); });
+
   }
-  flipCard();
-}
-function flipCard(){
-  console.log("I was cliked");
-}
-/*let cardArray = new Array();
-let cardArray = RickyMorty.items;
-
-console.log(cardArray);
-let grid = document.querySelector(".grid"); 
-let scoreBoard = document.querySelector(".scoreBoard"); 
-let popup = document.querySelector(".popup"); 
-let playAgain = document.querySelector(".playAgain"); 
-let clickBoard = document.querySelector(".clickBoard"); 
-let imgs; 
-let cardsId = []; 
-let cardsSelected = []; 
-let cardsWon = 0; 
-let clicks = 0;
-
-//createBoard function para imprimir las imagenes y crear el tablero
-
-function createBoard(grid, array) { 
-  popup.style.display = "none"; 
-  array.forEach((arr, index) => { 
-  let img = document.createElement("img"); 
-  img.setAttribute("src", "blank.png");
-  img.setAttribute("data-id", index); 
-  grid.appendChild(img); 
-  })
-}
-
-// arrangeCard function
-
-function arrangeCard() { 
-  cardArray.sort(() => 0.5 - Math.random())
-}
+  //flipCard();
   
+}
+/*let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard, secondCard;
+
+function flipCard() {
+  if (lockBoard) return;
+  if (this === firstCard) return;
+
+  this.classList.add('flip');
+  console.log("estoy dando click");
+
+  if (!hasFlippedCard) {
+    hasFlippedCard = true;
+    firstCard = this;
+   console.log("estoy dando click");
+    return;
+  }
+
+  secondCard = this;
+ // checkForMatch();
+ //elementsItems.forEach(card => card,addEventListener("click",flipCard())); //flipCard es una función
+
+}
+ // console.log("I was cliked");
+
   // flip Card function
-  function flipCard() { 
+  /*function flipCard() { 
   let selected = this.dataset.id;
   cardsSelected.push(cardArray[selected].name); //puede que sea el id
   cardsId.push(selected); 
@@ -119,5 +103,6 @@ function arrangeCard() {
     popup.style.display = "none"; 
 }*/
 
-*/
+
 export default App;
+//export default flipCard;

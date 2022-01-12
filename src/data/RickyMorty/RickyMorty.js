@@ -12,7 +12,7 @@ export default {
     { id: 'img5', image: 'data/RickyMorty/img5.jpg'},
     { id: 'img6', image: 'data/RickyMorty/img6.jpg'},
     { id: 'img6', image: 'data/RickyMorty/img6.jpg'},
-    { id: 'img7', image: 'data/RickyMorty/img7.jpg'},
-    { id: 'img7', image: 'data/RickyMorty/img7.jpg'},
+    { id: 'img1', image: 'data/RickyMorty/img1.jpg'},
+    { id: 'img1', image: 'data/RickyMorty/img1.jpg'},
   ],
 };
