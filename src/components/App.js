@@ -42,9 +42,9 @@ function App (){
     newDiv.className= "memory-card";
 //---- crea etiquetas img para imagenes front y back / se le asinga una clase -- 
     const frontFace = document.createElement("img");
-    const backFace = document.createElement("img");
+    //const backFace = document.createElement("img");
     frontFace.className = "front-face";
-    backFace.className= "back-face";
+    //backFace.className= "back-face";
 //---- Se le asigna src a cada img de front y back   
     const frontCard = document.createTextNode(frontFace.src= image);
     const backCard = document.createTextNode(backFace.src="data/RickyMorty/fondocards.png");
@@ -66,6 +66,7 @@ function flipCard(){
 }
 /*let cardArray = new Array();
 let cardArray = RickyMorty.items;
+
 console.log(cardArray);
 let grid = document.querySelector(".grid"); 
 let scoreBoard = document.querySelector(".scoreBoard"); 
@@ -116,9 +117,7 @@ function arrangeCard() {
     clickBoard.innerHTML = 0; 
     scoreBoard.innerHTML = 0; 
     popup.style.display = "none"; 
-}
+}*/
 
 */
-
-
 export default App;
