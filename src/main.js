@@ -7,7 +7,7 @@ document.addEventListener("click",App());
 //const cards= document.querySelectorAll(".memory-card");
 
 
-//elementsItems.forEach(card => card,addEventListener("click",flipCard())); //flipCard es una función
+//cards.forEach(card => card,addEventListener("click",flipCard())); //flipCard es una función
 
 
 //import flipCard from './components/App.js';
