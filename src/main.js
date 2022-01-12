@@ -8,7 +8,9 @@ document.addEventListener("click",App());
 
 
 
+
 //elementsItems.forEach(card => card,addEventListener("click",flipCard())); //flipCard es una función
+
 
 
 //import flipCard from './components/App.js';
