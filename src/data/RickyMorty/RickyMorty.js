@@ -1,7 +1,7 @@
 export default {
   name: 'RickyMorty',
   items: [
-    { id: 'fondocards', image: 'data/RickyMorty/fondocards.png'},
+    /*{ id: 'fondocards', image: 'data/RickyMorty/fondocards.png'},*/
     { id: 'img2', image: 'data/RickyMorty/img2.jpg'},
     { id: 'img2', image: 'data/RickyMorty/img2.jpg'},
     { id: 'img3', image: 'data/RickyMorty/img3.jpg'},
