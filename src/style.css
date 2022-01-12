@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/*gift de Rick y Morty
+/*gift de Rick y Morty*/
 .barra{
   text-align: center; 
   height: 3.125em;
@@ -17,7 +17,7 @@ img#RyMimag{
     height: auto;
     text-align: center;
 }
-/*nombre de la serie
+/*nombre de la serie*/
 .title{
    text-align: center;
    padding: 1.50em;
@@ -27,7 +27,7 @@ img#logo{
     height:12.5em;
     height: auto;
 }
-/*fondo de home
+/*fondo de home*/
 body#portada{
      background-image: url(img/fondoEstrellas.jpg);
      height: 100vh;
@@ -36,14 +36,14 @@ body#portada{
 main{
     text-align: center;
 } 
-/*texto en home
+/*texto en home*/
 .text{
     color: white;
     font-size: 1.15em;
     padding-left: 2.5em;
     padding-right: 2.5em;
 }
-/*botones de home
+/*botones de home*/
 .buttons{
    width: 100%;
    text-align:center;
@@ -65,11 +65,13 @@ main{
   /*padding-right: 8.125em;
   border-radius: 1.9em;
   box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
-  
- }
+*/  
+}
 .Morty{
     width: 11.25em;
     height: 11.25em;
+
+}
     /*padding: 1.5625em;
     box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
     border-radius: 1.9em;
@@ -81,7 +83,7 @@ main{
     padding-bottom: 0em;
 }*/
  /*fondo de  paginas de memory match*/
- .second{
+ .second {
     background-image: url(img/fondoCartas.jpg);
     background-position: center center;
     background-size: cover; 

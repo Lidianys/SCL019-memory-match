@@ -1,7 +1,3 @@
-//
-// Para incluir los diferentes sets de cartas podemos _importar_ el archivo
-// JavasSript que contenga el `export` correspondiente...
-//
 
  import RickyMorty from '../data/RickyMorty/RickyMorty.js';
  //console.log(RickyMorty);
@@ -12,7 +8,7 @@
  //console.log("holaaaa eres de tipo: "+typeof arrayCard);
 
 //---funcion Fisher-Yates Shuffle ----
-function shuffle(elementsItems) {
+function shuffle() {
   let currentIndex = elementsItems.length; 
   let randomIndex =0;
   let tempValue=0;
@@ -44,26 +40,24 @@ function App (){
     const frontFace = document.createElement("img");
     const backFace = document.createElement("img");
     frontFace.className = "front-face";
-    backFace.className= "back-face";
+   // backFace.className= "back-face";
 //---- Se le asigna src a cada img de front y back   
     const frontCard = document.createTextNode(frontFace.src= image);
-    const backCard = document.createTextNode(backFace.src="data/RickyMorty/fondocards.png");
+    //const backCard = document.createTextNode(backFace.src="data/RickyMorty/fondocards.png");
 //---- se inserta a cada nodo img su respectiva imagen -------  
     frontFace.appendChild(frontCard);
-    backFace.appendChild(backCard);
+   // backFace.appendChild(backCard);
 //---- se inserta a cada nodo div su respectiva img -------  
     newDiv.appendChild(frontFace);
-    newDiv.appendChild(backFace);
+    //newDiv.appendChild(backFace);
 //---- se inserta al nodo Select los div -------  
     document.getElementById("memory-game").appendChild(newDiv);
     //console.log(frontFace);   
     //backCard.className = "frontFace";
   }
-  flipCard();
+ 
 }
-function flipCard(){
-  console.log("I was cliked");
-}
+
 /*let cardArray = new Array();
 let cardArray = RickyMorty.items;
 console.log(cardArray);
