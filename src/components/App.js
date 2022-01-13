@@ -40,7 +40,7 @@ function App (){
     const newDiv = document.createElement("div");
     newDiv.className= "memory-card";
 
-    newDiv.onclick = function() { flipCard()}; //-----------------funciono------------
+    newDiv.onclick = flipCard; //-----------------funciono------------
 
    //---- crea etiquetas img para imagenes front y back / se le asinga una clase -- 
 
@@ -60,11 +60,15 @@ function App (){
    //---- se inserta al nodo Select los div -------  
     document.getElementById("memory-game").appendChild(newDiv);
     //console.log(frontFace);   
+  }
 
+  
   function flipCard(){
    console.log("Hola");
+   }
 }
 //para checkear las cartas que seleccionan<<<<<<<<<<<<<<<<<<
-/*const checkCards = (e) => { 
-  const clickedCard = e.target;
-  console.log(clickedCard); }*/
+//const checkCards = (e) => { 
+  //const clickedCard = e.target;
+  //console.log(clickedCard);
+
