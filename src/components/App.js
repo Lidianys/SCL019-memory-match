@@ -27,8 +27,8 @@ function App (){
   let image = new Array(); //definir imagen frontal de la carta
   let idCard = new Array();
  // let backImage=0; //definir imagen back de las cartas 
-  shuffle(elementsItems);
   
+ shuffle();
   for(let i = 0; i < elementsItems.length; i ++){
     image= elementsItems[i].image;//almacena la src de las imagenes front
     //elementsItems[i].addEventListener("click", displayCard);
@@ -39,9 +39,11 @@ function App (){
 
     const newDiv = document.createElement("div");
     newDiv.className= "memory-card";
+
     newDiv.onclick = function() { flipCard()}; //-----------------funciono------------
 
    //---- crea etiquetas img para imagenes front y back / se le asinga una clase -- 
+
     const frontFace = document.createElement("img");
     const backFace = document.createElement("img");
     frontFace.className = "front-face";
@@ -58,25 +60,10 @@ function App (){
    //---- se inserta al nodo Select los div -------  
     document.getElementById("memory-game").appendChild(newDiv);
     //console.log(frontFace);   
-    //backCard.className = "front-face";
-    
-    console.log("elementrs items" + elementsItems);
-    //para dar el click
-  }
-} 
-  console.log("estoy dando clcik");
 
-
-  var flipCard = function (){
-    //this.classList.toggle("flip");
-    //this.classList.toggle("open");
-    //this.classList.toggle("show");
-    //this.classList.toggle("disabled");
-    //this.classList.add('flip');
-    console.log("click");
-    alert("hola");
-  }
-
+  function flipCard(){
+   console.log("Hola");
+}
 //para checkear las cartas que seleccionan<<<<<<<<<<<<<<<<<<
 /*const checkCards = (e) => { 
   const clickedCard = e.target;
