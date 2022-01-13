@@ -24,13 +24,15 @@ function shuffle() {
 function App (){
   let image=0; //definir imagen frontal de la carta
  // let backImage=0; //definir imagen back de las cartas 
-  shuffle(elementsItems);
   
+ shuffle();
   for(let i = 0; i < elementsItems.length; i ++){
     image= elementsItems[i].image;//almacena la src de las imagenes front
 //---- crea una etiqueta div y se le asigna una class-------------------
     const newDiv = document.createElement("div");
     newDiv.className= "memory-card";
+    newDiv.onclick = function() { flipCard()};
+    //newDiv.setAttribute("onclick", flipCard());
 //---- crea etiquetas img para imagenes front y back / se le asinga una clase -- 
     const frontFace = document.createElement("img");
     const backFace = document.createElement("img");
@@ -48,21 +50,21 @@ function App (){
 //---- se inserta al nodo Select los div -------  
     document.getElementById("memory-game").appendChild(newDiv);
     //console.log(frontFace);   
-    //backCard.className = "front-face";
-    //elementsItems.forEach(card => card,addEventListener("click",flipCard())); //flipCard es una función
-    //elementsItems.addEventListener("click", function(){ alert("Hello World!"); });
-   
-  }
-
+    //backCard.className = "front-face"; 
+  newDiv.addEventListener("click",flipCard);
+  };
+};
+//let cards = document.querySelectorAll('.memory-card');
+//let hasFlippedCard = false;
+//let lockBoard = false;
+//let firstCard, secondCard;
   
+
+  function flipCard(){
+   console.log("Hola");
 }
-let cards = document.querySelectorAll('.memory-card');
-let hasFlippedCard = false;
-let lockBoard = false;
-let firstCard, secondCard;
-function flipCard(){
-  console.log("Entrando a flip");
-  if (lockBoard) return;
+ 
+/*  if (lockBoard) return;
   if (this === firstCard) return;
   
   this.classList.add('flip');
@@ -75,7 +77,7 @@ function flipCard(){
   }
   console.log("Funcion de flip");
  return cards.addEventListener("click", alert("estoy clickeando"));
- 
-}
+ */ 
+
 export default App;
 //export default flipCard;

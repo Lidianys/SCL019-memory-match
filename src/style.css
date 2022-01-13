@@ -63,25 +63,24 @@ main{
   height:11.5em;  
   padding: 1.5625em;
   /*padding-right: 8.125em;*/
-  border-radius: 1.9em;
+  /*border-radius: 1.9em;*/
   box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
-  
 }
 .Morty{
     width: 11.25em;
     height: 11.25em;
 
-   /* padding: 1.5625em;*/
+   /* padding: 1.5625em;
     box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
     border-radius: 1.9em;
   }
-/*copyright de las 3 páginas*/
+/*copyright de las 3 páginas
 .copyright{
     color: white;
     text-align: center;
     padding-bottom: 0em;
 }
- /*fondo de  paginas de memory match*/
+ /*fondo de  paginas de memory match
  .second {
     background-image: url(img/fondoCartas.jpg);
     background-position: center center;
