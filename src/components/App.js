@@ -39,7 +39,7 @@ function App (){
 
     const newDiv = document.createElement("div");
     newDiv.className= "memory-card";
-    newDiv.onclick = function() { flipCard()}; //-----------------funciono------------
+    newDiv.onclick =  flipCard; //-----------------funciono------------
 
    //---- crea etiquetas img para imagenes front y back / se le asinga una clase -- 
     const frontFace = document.createElement("img");
@@ -55,7 +55,9 @@ function App (){
    //---- se inserta a cada nodo div su respectiva img -------  
     newDiv.appendChild(frontFace);
     newDiv.appendChild(backFace);
-   //---- se inserta al nodo Select los div -------  
+   //---- se inserta al nodo Select los div ------- 
+   let prueba = document.getElementById("memory-game");
+   console.log("eprueba" , prueba);
     document.getElementById("memory-game").appendChild(newDiv);
     //console.log(frontFace);   
     //backCard.className = "front-face";
@@ -66,9 +68,26 @@ function App (){
 } 
   console.log("estoy dando clcik");
 
+function flipCard(e){
+  let cards= document.getElementsByClassName("memory-card");
+  //cards.classList.remove("toggleCard");
+  //cards.target.style = "flip";
+  //e.target.style.background="red"; //------------funciona--------
+  e.target.className= "memory-card";
+  //e.target.className("memory-card.flip").style = "180deg";
+  //e.target.style.flip="180deg";
+  console.log(e.target.style);
+  console.log(e.target);
 
-  var flipCard = function (){
-    //this.classList.toggle("flip");
+  //return cards;
+}
+  /*let flipCard = function (e){
+    console.log("evento" , e.target.style);
+    let cards = document.getElementsByClassName("memory-card");
+    //console.log("hola", cards.target.style);
+    cards.classList.add("toggleCard");
+    //e.target.style.classList.toggle('toggleCard');
+   // e.target.style =  cards.className.add("toggleCard");
     //this.classList.toggle("open");
     //this.classList.toggle("show");
     //this.classList.toggle("disabled");

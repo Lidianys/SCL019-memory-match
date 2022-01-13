@@ -105,29 +105,32 @@ h1{
 }
   /*esto es el div*/
 .memory-card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
-    margin: 5px;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    box-shadow: 7px 7px 7px rgba(8, 114, 49, 0.5);
-    perspective: 800px;
-    transform: rotateY(0deg);
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  perspective: 800px;
+  box-shadow: 7px 7px 7px rgba(8, 114, 49, 0.5);
+  animation: iniciar 2s;
 }
   
 .memory-card:active {
-    transform: scale(0.97);
-    transition: transform .2s;
-    transform: rotateY(180deg);
-   
+  transform: scale(0.97);
+  transition: transform .2s;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;   
 }
+.memory-card.flip {
+  transform: rotateY(180deg);
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
   
-.toggleCard {
-    transform: rotateY(180deg);
 }
-  
 .front-face,
 .back-face {
     width: 100%;
@@ -135,14 +138,14 @@ h1{
     padding: 5px;
     position: absolute;
     border-radius: 5px;
+    
     background: white;
-    backface-visibility: hidden;
-    object-fit: cover;
+
 }
  
 .front-face {
     transform: rotateY(180deg);
-    backface-visibility: hidden;
+    
 }
  
 
