@@ -1,5 +1,9 @@
+
 import RickyMorty from '../data/RickyMorty/RickyMorty.js';
 export default App;
+
+
+
  let elementsItems= RickyMorty.items;//definimos los elementos de la data
 //---funcion Fisher-Yates Shuffle ----
 function shuffle() {
@@ -56,6 +60,7 @@ function App (){
     //backCard.className = "front-face";
     //elementsItems.forEach(card => card,addEventListener("click",flipCard())); //flipCard es una función
     //elementsItems.addEventListener("click", function(){ alert("Hello World!"); });
+
     console.log("elementrs items" + elementsItems);
     /*document.getElementsByClassName("memory-card").onclick = function(){
       alert("hola");
@@ -77,7 +82,10 @@ function App (){
   var el = document.getElementById("memory-card");
   el.addEventListener("click", function(){alert("estas dando click");});
   checkCards();
-}
+   
+  }
+
+  }
 //para checkear las cartas que seleccionan<<<<<<<<<<<<<<<<<<
 const checkCards = (e) => { 
   const clickedCard = e.target;
