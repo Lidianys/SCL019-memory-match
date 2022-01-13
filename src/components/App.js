@@ -39,12 +39,7 @@ function App (){
 
     const newDiv = document.createElement("div");
     newDiv.className= "memory-card";
-<<<<<<< HEAD
     newDiv.onclick =  flipCard; //-----------------funciono------------
-=======
-
-    newDiv.onclick = flipCard; //-----------------funciono------------
->>>>>>> ac24e19e95368f1fcae595d49e2f64b00af63bd0
 
    //---- crea etiquetas img para imagenes front y back / se le asinga una clase -- 
 
@@ -66,7 +61,6 @@ function App (){
    console.log("eprueba" , prueba);
     document.getElementById("memory-game").appendChild(newDiv);
     //console.log(frontFace);   
-<<<<<<< HEAD
     //backCard.className = "front-face";
     
     console.log("elementrs items" + elementsItems);
@@ -101,8 +95,6 @@ function flipCard(e){
     //this.classList.add('flip');
     console.log("click");
     alert("hola");
-=======
->>>>>>> ac24e19e95368f1fcae595d49e2f64b00af63bd0
   }
 
   
@@ -113,5 +105,4 @@ function flipCard(e){
 //para checkear las cartas que seleccionan<<<<<<<<<<<<<<<<<<
 //const checkCards = (e) => { 
   //const clickedCard = e.target;
-  //console.log(clickedCard);
-
+  //console.log(clickedCard);*/
