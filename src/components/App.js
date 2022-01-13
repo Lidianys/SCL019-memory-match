@@ -27,8 +27,8 @@ function App (){
   let image = new Array(); //definir imagen frontal de la carta
   let idCard = new Array();
  // let backImage=0; //definir imagen back de las cartas 
-  shuffle(elementsItems);
   
+ shuffle();
   for(let i = 0; i < elementsItems.length; i ++){
     image= elementsItems[i].image;//almacena la src de las imagenes front
     //elementsItems[i].addEventListener("click", displayCard);
@@ -39,9 +39,15 @@ function App (){
 
     const newDiv = document.createElement("div");
     newDiv.className= "memory-card";
+<<<<<<< HEAD
     newDiv.onclick =  flipCard; //-----------------funciono------------
+=======
+
+    newDiv.onclick = flipCard; //-----------------funciono------------
+>>>>>>> ac24e19e95368f1fcae595d49e2f64b00af63bd0
 
    //---- crea etiquetas img para imagenes front y back / se le asinga una clase -- 
+
     const frontFace = document.createElement("img");
     const backFace = document.createElement("img");
     frontFace.className = "front-face";
@@ -60,6 +66,7 @@ function App (){
    console.log("eprueba" , prueba);
     document.getElementById("memory-game").appendChild(newDiv);
     //console.log(frontFace);   
+<<<<<<< HEAD
     //backCard.className = "front-face";
     
     console.log("elementrs items" + elementsItems);
@@ -94,9 +101,17 @@ function flipCard(e){
     //this.classList.add('flip');
     console.log("click");
     alert("hola");
+=======
+>>>>>>> ac24e19e95368f1fcae595d49e2f64b00af63bd0
   }
 
+  
+  function flipCard(){
+   console.log("Hola");
+   }
+}
 //para checkear las cartas que seleccionan<<<<<<<<<<<<<<<<<<
-/*const checkCards = (e) => { 
-  const clickedCard = e.target;
-  console.log(clickedCard); }*/
+//const checkCards = (e) => { 
+  //const clickedCard = e.target;
+  //console.log(clickedCard);
+

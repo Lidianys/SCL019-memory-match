@@ -71,7 +71,7 @@ main{
     box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
     border-radius: 1.9em;
   }
-/*copyright de las 3 páginas*/
+/*copyright de las 3 páginas
 .copyright{
     color: white;
     text-align: center;
@@ -145,10 +145,16 @@ h1{
  
 .front-face {
     transform: rotateY(180deg);
-    
 }
- 
-
+/*@keyframes iniciar   
+{
+    20%,90%{
+        transform:rotateY(180deg);
+    }
+    0%,100%{
+        transform: rotateY(0deg);
+    }
+}*/
 /*
 @media screen and (max-width: 700px) {
     .buttom {   
