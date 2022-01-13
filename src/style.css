@@ -54,8 +54,6 @@ main{
    display: flex;
    justify-content: space-around;
    flex-direction: row;
-   
-
 }
 
 .Rick{
@@ -63,14 +61,13 @@ main{
   height:11.5em;  
   padding: 1.5625em;
   /*padding-right: 8.125em;*/
-  /*border-radius: 1.9em;*/
-  box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
+  border-radius: 1.9em;
+  box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;  
 }
 .Morty{
     width: 11.25em;
     height: 11.25em;
-
-   /* padding: 1.5625em;
+   /* padding: 1.5625em;*/
     box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
     border-radius: 1.9em;
   }
@@ -114,18 +111,22 @@ h1{
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
-    transition: transform .5s;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 7px 7px 7px rgba(8, 114, 49, 0.5);
+    perspective: 800px;
+    transform: rotateY(0deg);
 }
   
 .memory-card:active {
     transform: scale(0.97);
     transition: transform .2s;
-  }
-  
-.memory-card.flip {
     transform: rotateY(180deg);
-  }
+   
+}
+  
+.toggleCard {
+    transform: rotateY(180deg);
+}
   
 .front-face,
 .back-face {
@@ -139,9 +140,10 @@ h1{
     object-fit: cover;
 }
  
-/*front-face {
+.front-face {
     transform: rotateY(180deg);
-}*/
+    backface-visibility: hidden;
+}
  
 
 /*
