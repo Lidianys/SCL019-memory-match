@@ -44,5 +44,5 @@ function App (){
 
 function checkCards (e){
   const clickCard= e.target;
-
+  console.log(clickCard);
 };
