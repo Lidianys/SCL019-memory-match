@@ -122,19 +122,21 @@ section{
 button {
     display: block;
     margin: 20px auto;
-    background: salmon;
+    background: rgb(17, 194, 218);
     color: white;
     border: 0;
     padding: 6px 10px;
     cursor: pointer;
 }
- 
+    
 button:hover {
-    background: palevioletred;
+    background: rgb(207, 220, 226);
     transition: all 0.2s;
 }
  
 .popup-wrapper {
+    display:none;
+    z-index: 100;
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -148,14 +150,14 @@ button:hover {
     text-align: center;
     width: 100%;
     max-width: 300px;
-    background: rgb(32, 184, 53);
+    background: rgba(197, 209, 199, 0.863);
     margin: 10% auto;
     padding: 20px;
     position: relative;
 }
  
 .popup a {
-    background: salmon;
+    /*background: salmon;*/
     color: white;
     text-decoration: none;
     padding: 6px 10px;
@@ -165,7 +167,7 @@ button:hover {
 }
  
 .popup a:hover {
-    background: palevioletred;
+    background: rgb(68, 202, 226);
     transition: all 0.2s;
 }
  
