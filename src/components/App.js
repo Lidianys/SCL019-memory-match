@@ -24,7 +24,7 @@ function App (){
     card.className = "card";
     front.className = "front";
     back.className ="back";
-    console.log("datacard id", dataCard.id);
+    
 
     //adjuntamos un id a la 
     //front.id=dataCard[i].id;
@@ -52,6 +52,7 @@ function App (){
 function checkCards (e){
   console.log(e);
   const clickCard= e.target;
+
   clickCard.classList.add("flipped");
   const flippedCards = document.querySelectorAll(".flipped");
   const toggleCard = document.querySelectorAll(".toggleCard");
@@ -83,9 +84,14 @@ function checkCards (e){
      });
    }
    if(toggleCard.length === 12){
-    alert("ganastes");
-   }
-
+    //alert("ganastes");
+      const popup = document.querySelector(".popup-wrapper");
+      const close = document.querySelector(".popup-close");
+       popup.style.display ="block";
+       close.addEventListener("click",()=>{
+         popup.style.display = "none";
+       } );
+  }
  }
  
 }
@@ -102,4 +108,5 @@ function checkCards (e){
       
     });
   }
-} */
+}*/
+
