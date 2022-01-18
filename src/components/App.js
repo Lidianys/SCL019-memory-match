@@ -41,9 +41,7 @@ function App (){
       card.classList.toggle("toggleCard"); 
       moves++;
       console.log("moves" + moves);
-      movimientos.textContent = moves; 
-
-      
+      movimientos.textContent = moves;       
       checkCards(e);
     });
   }
