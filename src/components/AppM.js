@@ -1,7 +1,6 @@
-
-import RickyMorty from '../data/RickyMorty/RickyMorty.js';
-export default App;
-let elementsItems= RickyMorty.items;
+import Morty from '../data/Morty/Morty.js';
+export default AppM;
+let elementsItems= Morty.items;
 //*******desordenamos la data ************/
 const board = document.querySelector(".board");
 const puntuacion = document.querySelector(".puntuacion");
@@ -15,7 +14,7 @@ const randomize = () =>{
 };
 
 /**********FUNCION APP****************/
-function App (){
+function AppM (){
   const dataCard = randomize();
   for(let i = 0; i < dataCard.length; i ++){
     const card = document.createElement("div"); //creamos la tarjeta
@@ -40,7 +39,7 @@ function App (){
       
       card.classList.toggle("toggleCard"); 
       moves++;
-      console.log("moves" + moves);
+      
       movimientos.textContent = moves; 
 
       
@@ -50,30 +49,30 @@ function App (){
 }
 
 function checkCards (e){
-  console.log(e);
+  
   const clickCard= e.target;
 
   clickCard.classList.add("flipped");
   const flippedCards = document.querySelectorAll(".flipped");
   const toggleCard = document.querySelectorAll(".toggleCard");
-  console.log("estoy dando click" + clickCard);
+
  
  //logic
  if(flippedCards.length === 2){
-   console.log("flippedcard lenght ", flippedCards.length);
+  
    if(flippedCards[0].getAttribute("name") === flippedCards[1].getAttribute("name")){
     flippedCards.forEach((card) => {
      card.classList.remove("flipped");
      card.style.pointerEvents= "none";
      points++;
-     console.log("puntos +" + points/2);
+     
      puntuacion.textContent = points/2;
      //aqui va el pop up de ganador
      
     });
    }
    else {
-     console.log("wrong");
+     
      flippedCards.forEach(card =>{
        card.classList.remove("flipped");
        setTimeout(() =>
@@ -87,14 +86,21 @@ function checkCards (e){
     //alert("ganastes");
       const popup = document.querySelector(".popup-wrapper");
       const close = document.querySelector(".popup-close");
+      const reset = document.querySelector(".reset");
+      //const section = document.querySelector(".board");
        popup.style.display ="block";
        close.addEventListener("click",()=>{
          popup.style.display = "none";
        } );
+       reset.addEventListener("click", ()=>{
+        
+         
+       });
   }
- }
+ 
  
 }
+  }
 //restart
 /*const restart = () =>{
   let cardData = randomize();
@@ -109,4 +115,3 @@ function checkCards (e){
     });
   }
 }*/
-

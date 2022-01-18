@@ -9,31 +9,27 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-
-
 <body id="second" class="second">
   <header>
     <nav>
       <!--<audio src='audio/audio.mp3' autoplay="true" loop="true"></audio>-->
       <ul>
         <li><a href="index.html"><span class="material-icons m-36">home</span></a></li>
-        <li><a href="#"><span class="material-icons">volume_up</span></a></li>
-        <li><a href="#"><span class="material-icons">replay</span></a></li>
       </ul> 
     </nav>
   </header>
-  <div>
-    <p  style="color: azure;">Movimientos: <span class="movimientos"></span> </p>
-    <p style="color: azure;">Puntuación: <span  class="puntuacion"></span> </p>
+  <div class="barra-movimiento">
+    <p  class="moves">Movimientos: <span class="movimientos"></span> </p>
+    <p class="moves">Puntuación: <span  class="puntuacion"></span> </p>
   </div>
   <div class="popup-wrapper">
    <div class="popup">
     <div class="popup-close">X</div>
     <div class="popup-content">
-      <p>¡GANASTES!</p>
+      <p>¡GANASTES!Inténtalo con Morty!</p>
       <img src="img/ganar.gif" alt="ganar" class="gift">
-      <button>Volver a jugar</button>
+      <a href="index.html" target="_blank"><button class="reset">Volver a jugar</button></a>
+
     </div>
   </div>
   </div>
