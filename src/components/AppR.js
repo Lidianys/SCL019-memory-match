@@ -40,10 +40,15 @@ function AppR (){
       
       card.classList.toggle("toggleCard"); 
       moves++;
+<<<<<<< HEAD:src/components/AppR.js
       
       movimientos.textContent = moves; 
 
       
+=======
+      console.log("moves" + moves);
+      movimientos.textContent = moves;       
+>>>>>>> 78ca172f2dbb3b47ae48cdf9d911c6e5ccb3de4b:src/components/App.js
       checkCards(e);
     });
   }
