@@ -53,8 +53,6 @@ function checkCards (e){
   clickCard.classList.add("flipped");
   const flippedCards = document.querySelectorAll(".flipped");
   const toggleCard = document.querySelectorAll(".toggleCard");
-
- 
  //logic
  if(flippedCards.length === 2){
   
@@ -63,37 +61,54 @@ function checkCards (e){
      card.classList.remove("flipped");
      card.style.pointerEvents= "none";
      points++;
-     
+
      puntuacion.textContent = points/2;
     });
    }
    else {
-     
-     flippedCards.forEach(card =>{
-       card.classList.remove("flipped");
-       setTimeout(() =>
-         card.classList.remove("toggleCard"),1000);
-         if(flippedCards.length === 0)  {
-           alert("perdistes"); //aqui se llama a la funcion restaurar
-         } 
-     });
-   }
+    flippedCards.forEach(card =>{
+      card.classList.remove("flipped");
+      setTimeout(() =>
+        card.classList.remove("toggleCard"),1000);
+    });
+
+  }
    if(toggleCard.length === 12){
-    //alert("ganastes");
+     
+     const button = document.querySelector("button"); 
       const popup = document.querySelector(".popup-wrapper");
       const close = document.querySelector(".popup-close");
-      const reset = document.querySelector(".reset");
-      //const section = document.querySelector(".board");
-       popup.style.display ="block";
+
+      popup.style.display ="block";
+      button.addEventListener("click",()=> {
+       
+        popup.style.display = "none";
+        restart();
+      });
+     
        close.addEventListener("click",()=>{
          popup.style.display = "none";
        } );
-       reset.addEventListener("click", ()=>{
-        
-         
-       });
+
+      
+    }
+ }
+  //Se reinicia todo!
+  const restart = () =>{
+    let cardData = randomize();
+    let front = document.querySelectorAll(".front");
+    let card = document.querySelectorAll(".card");
+    points=0;
+    moves=0;
+     puntuacion.textContent = points;
+      movimientos.textContent = moves;
+    cardData.forEach((item, index) => {
+      card[index].classList.remove("toggleCard");
+      card[index].style.pointerEvents= "all";
+      front[index].src=item.image;
+      card[index].setAttribute ("name",item.id);
+      
+    });
   }
- 
- 
 }
-  }
+

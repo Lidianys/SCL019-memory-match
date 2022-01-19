@@ -84,6 +84,7 @@ function checkCards (e){
       popup.style.display ="block";
       button.addEventListener("click",()=> {
         
+
         popup.style.display = "none";
         restart();
       });
@@ -93,10 +94,9 @@ function checkCards (e){
        } );
       
     }
-  }
+ }
   //Se reinicia todo!
   const restart = () =>{
-    console.log("Entraste a RESTART");
     let cardData = randomize();
     let front = document.querySelectorAll(".front");
     let card = document.querySelectorAll(".card");
@@ -113,3 +113,4 @@ function checkCards (e){
     });
   }
 }
+
