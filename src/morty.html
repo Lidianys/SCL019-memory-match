@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Morty page</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body id="second" class="second">
   <header>
-    <audio controls>
-      <source src='intro.mp3' type="intro.mpeg">
-    </audio>
     <nav>
+      <!--<audio src='audio/audio.mp3' autoplay="true" loop="true"></audio>-->
       <ul>
         <li><a href="index.html"><span class="material-icons m-36">home</span></a></li>
-        <li><a href="#"><span class="material-icons">volume_up</span></a></li>
-        <li><a href="#"><span class="material-icons">replay</span></a></li>
       </ul> 
     </nav>
   </header>
-  <main>
-    <h1>Hola mundo</h1>
-    <div id="contenedor-cards2" class="contenedor-cards">
-      <p>probando espacios</p>
-     </div>
-  </main>
-  <footer>
-    <p class="copyright">2021 Rick and Morty. Link a  <a href="https://linktr.ee/rickandmorty">Sitio oficial</a> </p>
-  </footer>
- 
+  <div class="barra-movimiento">
+    <p  class="moves">Movimientos: <span class="movimientos"></span> </p>
+    <p class="moves">Puntuación: <span  class="puntuacion"></span> </p>
+  </div>
+  <div class="popup-wrapper">
+   <div class="popup">
+    <div class="popup-close">X</div>
+    <div class="popup-content">
+      <p>¡GANASTES!Inténtalo con Rick!</p>
+      <img src="img/ganarM.gif" alt="ganar" class="gift">
+      <a href="index.html" target="_blank"><button class="reset">Volver a jugar</button></a>
+
+    </div>
+  </div>
+  </div>
+  <section id="board" class="board">
+  </section>
+ <script src="mainM.js" type="module"></script>
 </body>
 </html>

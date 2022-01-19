@@ -1,6 +1,6 @@
-import App from './components/App.js';
+import AppR from './components/AppR.js';
 
 //Se llama la función crea el tablero y las cartas
-document.addEventListener("DOMContentLoaded",App());
+document.addEventListener("DOMContentLoaded",AppR());
 //App();
 
