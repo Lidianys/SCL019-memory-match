@@ -65,27 +65,71 @@ function checkCards (e){
      card.classList.remove("flipped");
      card.style.pointerEvents= "none";
      points++;
+<<<<<<< HEAD:src/components/App.js
+=======
      
+>>>>>>> 76083c837dd338a0c8eb48d4a74eb5d63d66cde1:src/components/AppM.js
      puntuacion.textContent = points/2;
      //aqui va el pop up de ganador
      
     });
    }
    else {
+<<<<<<< HEAD:src/components/App.js
+    
+=======
      
+>>>>>>> 76083c837dd338a0c8eb48d4a74eb5d63d66cde1:src/components/AppM.js
      flippedCards.forEach(card =>{
        card.classList.remove("flipped");
        setTimeout(() =>
          card.classList.remove("toggleCard"),1000);
-         if(flippedCards.length === 0)  {
+        /* if(flippedCards.length === 0)  {
            alert("perdistes"); //aqui se llama a la funcion restaurar
-         } 
+         } */
      });
    }
    if(toggleCard.length === 12){
-    //alert("ganastes");
+     //alert("ganastes");
+     const button = document.querySelector("button"); 
       const popup = document.querySelector(".popup-wrapper");
       const close = document.querySelector(".popup-close");
+<<<<<<< HEAD:src/components/App.js
+      popup.style.display ="block";
+      button.addEventListener("click",()=> {
+        console.log("entramos al botón");
+        popup.style.display = "none";
+        restart();
+      });
+     
+       close.addEventListener("click",()=>{
+         popup.style.display = "none";
+       } );
+      
+    }
+  }
+ 
+
+  //Se reinicia todo!
+  const restart = () =>{
+    console.log("Entraste a RESTART");
+    let cardData = randomize();
+    let front = document.querySelectorAll(".front");
+    let card = document.querySelectorAll(".card");
+    points=0;
+    moves=0;
+     puntuacion.textContent = points;
+      movimientos.textContent = moves;
+    cardData.forEach((item, index) => {
+      card[index].classList.remove("toggleCard");
+      card[index].style.pointerEvents= "all";
+      front[index].src=item.image;
+      card[index].setAttribute ("name",item.id);
+      
+    });
+  }
+}
+=======
       const reset = document.querySelector(".reset");
       //const section = document.querySelector(".board");
        popup.style.display ="block";
@@ -115,3 +159,4 @@ function checkCards (e){
     });
   }
 }*/
+>>>>>>> 76083c837dd338a0c8eb48d4a74eb5d63d66cde1:src/components/AppM.js
