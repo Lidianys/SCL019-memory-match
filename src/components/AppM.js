@@ -68,22 +68,23 @@ function checkCards (e){
     });
    }
    else {
-    flippedCards.forEach(card =>{
-      card.classList.remove("flipped");
-      setTimeout(() =>
-        card.classList.remove("toggleCard"),1000);
-    });
+     flippedCards.forEach(card =>{
+       card.classList.remove("flipped");
+       setTimeout(() =>
+         card.classList.remove("toggleCard"),1000);
+     });
 
-  }
+   }
    if(toggleCard.length === 12){
-     
+    
      const button = document.querySelector("button"); 
       const popup = document.querySelector(".popup-wrapper");
       const close = document.querySelector(".popup-close");
-
+      
       popup.style.display ="block";
       button.addEventListener("click",()=> {
-       
+        
+
         popup.style.display = "none";
         restart();
       });
@@ -112,3 +113,4 @@ function checkCards (e){
     });
   }
 }
+

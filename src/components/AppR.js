@@ -63,7 +63,6 @@ function checkCards (e){
      points++;
 
      puntuacion.textContent = points/2;
-     
     });
    }
    else {
@@ -90,6 +89,7 @@ function checkCards (e){
        close.addEventListener("click",()=>{
          popup.style.display = "none";
        } );
+
       
     }
  }
@@ -111,3 +111,4 @@ function checkCards (e){
     });
   }
 }
+
