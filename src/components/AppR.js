@@ -40,15 +40,7 @@ function AppR (){
       
       card.classList.toggle("toggleCard"); 
       moves++;
-<<<<<<< HEAD:src/components/AppR.js
-      
       movimientos.textContent = moves; 
-
-      
-=======
-      console.log("moves" + moves);
-      movimientos.textContent = moves;       
->>>>>>> 78ca172f2dbb3b47ae48cdf9d911c6e5ccb3de4b:src/components/App.js
       checkCards(e);
     });
   }
@@ -73,8 +65,6 @@ function checkCards (e){
      points++;
      
      puntuacion.textContent = points/2;
-     //aqui va el pop up de ganador
-     
     });
    }
    else {
@@ -107,17 +97,3 @@ function checkCards (e){
  
 }
   }
-//restart
-/*const restart = () =>{
-  let cardData = randomize();
-  let faces = document.querySelectorAll(".face");
-  let cards = document.querySelectorAll(".card");
-  Selection.style.pointerEvents= "none";
-  cardData.forEach(item, index) => {
-    cards[index].classList.remove("toggleCard");
-    //randomize
-    setTimeout(() => {
-      
-    });
-  }
-}*/
