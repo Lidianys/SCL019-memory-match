@@ -55,7 +55,7 @@ main{
 /*texto en home*/
 .text{
     color: white;
-    font-size: 1em;
+    font-size: 1.1em;
     padding-left: 2.5em;
     padding-right: 2.5em;
 }
@@ -84,12 +84,16 @@ main{
     box-shadow: 0 .5em 1em 0 white, 0 .375em 1.25em 0 green;
     border-radius: 5em;
   }
+.name{ 
+    font-size:1.5em;
+}
 /*copyright */
 .copyright{
     color: white;
     text-align: center;
     padding-bottom: 0em;
     background-color: black;
+    padding-top: 1em;
 }
  /*fondo de  paginas de memory match*/
  .second {
@@ -249,18 +253,19 @@ h1{
     color: aliceblue;
 }
 /*responsive*/
-@media screen and (max-width:480px){
+@media screen and (max-width:800px){
 	body#portada {
-		font-size:60%; /* achicamos la fuente en pantallas pequeñas */
+		font-size:80%; /* achicamos la fuente en pantallas pequeñas */
         background-position: center;
 	} 
     img#RyMimag{
-        width: 8em;
-        height: 8em;
+        width: 12em;
+        height: 10em;
+        display: flex;
     }
     img#logo{
-        width: 10em;
-        height:6em;
+        width: 18em;
+        height:10em;
         text-align: center;
         display: flex;
     }
@@ -268,23 +273,26 @@ h1{
         width: 8em;
         height: 8em;
         border-radius: 5em;
-        box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
+        box-shadow: 0 .5em 1em 0 white, 0 .375em 1.25em 0 green;
       }
     .Morty{
-        width: 4em;
-        height: 4em;
-        box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
+        width: 8em;
+        height: 8em;
+        box-shadow: 0 .5em 1em 0 white, 0 .375em 1.25em 0 green;
         border-radius: 5em;
     }
+    .copyright{
+        padding-top: 2em;
+    }    
     section{
         display: grid;
-        width: 300px;
-        height: 300px;
+        width: 18em;
+        height: 18em;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        perspective: 1000px;
-        padding: 10px;      
+        perspective: 62.5em;
+        padding: .2em;      
     }
     .second {
         display: flex;
@@ -292,17 +300,28 @@ h1{
         background-position: center center;
         background-size: cover; 
         background-repeat: no-repeat;
-        height: 60vh; 
+        height: 100vh; 
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+    .board{
+        display: grid;
+        width: 20em;
+        height: 20em;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        perspective: 62.5em;
+        padding: .625em;
+        
+    }
     .moves{
         color: white;
-        padding-right: 5px;
-        padding-left: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-right: .3125em;
+        padding-left: .3125em;
+        padding-top: .3125em;
+        padding-bottom: .3125em;
         text-align: center;
        }
 }
