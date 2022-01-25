@@ -3,33 +3,45 @@
     margin: 0em;
     padding: 0em;
     box-sizing: border-box;
+    
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 /*gift de Rick y Morty*/
 .barra{
-  text-align: center; 
+  /*text-align: center; */
   height: 3.125em;
   width: auto;
+  align-items: center;
+
 }
 img#RyMimag{
     width: 20em;
     height: 12.5em; 
     height: auto;
-    text-align: center;
+   
 }
 /*nombre de la serie*/
 .title{
-   text-align: center;
    padding: 1.50em;
+   display: flex;
 }
 img#logo{
     width: 18em;
     height:12.5em;
     height: auto;
+   
 }
 /*fondo de home*/
 body#portada{
      background-image: url(img/fondoEstrellas.jpg);
      height: 100vh;
+     /*display: flex; /*agregado 19/01 - Daniela*/
+     flex-wrap: wrap; /*agregado 19/01 - Daniela*/
 }
 /*main de home*/
 main{
@@ -52,29 +64,37 @@ main{
    font-size: 1.05em;
    display: flex;
    justify-content: space-around;
-   flex-direction: row;
+   flex-direction: wrap;
 }
 
 .Rick{
-  width: 11.5em;
-  height:11.5em;  
-  padding: 1.5625em;
+  width: 12em;
+  height: 14em;  
+ /* padding: 1.5625em;
   /*padding-right: 8.125em;*/
-  border-radius: 1.9em;
-  box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;  
+  border-radius: 50%;
+ /* box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;  */
+  flex-direction: wrap;
+  background-color: rgba(248, 250, 248, 0.178);
 }
 .Morty{
-    width: 11.25em;
-    height: 11.25em;
+    width: 14em;
+    height: 14em;
    /* padding: 1.5625em;*/
-    box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;
-    border-radius: 1.9em;
+  /*  box-shadow: 0 8px 16px 0 white, 0 6px 20px 0 green;*/
+    border-radius: 50%;
+    flex-direction: wrap;
+    image-rendering: auto;
+    background-color: rgba(248, 250, 248, 0.178);
+
+
   }
-/*copyright de las 3 páginas
+/*copyright de las 3 páginas*/
 .copyright{
     color: white;
     text-align: center;
     padding-bottom: 0em;
+    background-color: black;
 }
  /*fondo de  paginas de memory match*/
  .second {
@@ -89,7 +109,7 @@ main{
     flex-direction: column;
 }
 
-section{
+.board{
     display: grid;
    /* grid-template-columns: repeat(4,9rem);
     grid-template-rows: repeat(4,9rem);*/

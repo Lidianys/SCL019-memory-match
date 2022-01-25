@@ -1,5 +1,5 @@
 import Morty from '../data/Morty/Morty.js';
-export default AppM;
+export default App;
 let elementsItems= Morty.items;
 //*******desordenamos la data ************/
 const board = document.querySelector(".board");
@@ -14,7 +14,7 @@ const randomize = () =>{
 };
 
 /**********FUNCION APP****************/
-function AppM (){
+function App (){
   const dataCard = randomize();
   for(let i = 0; i < dataCard.length; i ++){
     const card = document.createElement("div"); //creamos la tarjeta
