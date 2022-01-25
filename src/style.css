@@ -2,12 +2,16 @@
 *{
     margin: 0em;
     padding: 0em;
+    box-sizing: border-box;
+    
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 /*gift de Rick y Morty*/
-header{ 
-    text-align: center;
-    justify-content: center;
-}
 .barra{
   text-align: center;
   height: 4em;
@@ -85,6 +89,7 @@ main{
     color: white;
     text-align: center;
     padding-bottom: 0em;
+    background-color: black;
 }
  /*fondo de  paginas de memory match*/
  .second {
@@ -99,7 +104,7 @@ main{
     flex-direction: column;
 }
 
-section{
+.board{
     display: grid;
     width: 32.5em;
     height: 32.5em;

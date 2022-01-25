@@ -1,5 +1,5 @@
 import Morty from '../data/Morty/Morty.js';
-export default AppM;
+export default App;
 let elementsItems= Morty.items;
 //*******desordenamos la data ************/
 const board = document.querySelector(".board");
@@ -14,7 +14,7 @@ const randomize = () =>{
 };
 
 /**********FUNCION APP****************/
-function AppM (){
+function App (){
   const dataCard = randomize();
   for(let i = 0; i < dataCard.length; i ++){
     const card = document.createElement("div"); //creamos la tarjeta
@@ -68,22 +68,23 @@ function checkCards (e){
     });
    }
    else {
-    flippedCards.forEach(card =>{
-      card.classList.remove("flipped");
-      setTimeout(() =>
-        card.classList.remove("toggleCard"),1000);
-    });
+     flippedCards.forEach(card =>{
+       card.classList.remove("flipped");
+       setTimeout(() =>
+         card.classList.remove("toggleCard"),1000);
+     });
 
-  }
+   }
    if(toggleCard.length === 12){
-     
+    
      const button = document.querySelector("button"); 
       const popup = document.querySelector(".popup-wrapper");
       const close = document.querySelector(".popup-close");
-
+      
       popup.style.display ="block";
       button.addEventListener("click",()=> {
-       
+        
+
         popup.style.display = "none";
         restart();
       });
@@ -112,3 +113,4 @@ function checkCards (e){
     });
   }
 }
+
