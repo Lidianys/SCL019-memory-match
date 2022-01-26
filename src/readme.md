@@ -11,14 +11,25 @@ Nuestro proceso de UX se baso en varias etapas:
 *agregarle música
 *agregarle animación
 4- Prototipado:Realizamos un prototipo primeramente de baja fidelidad, utilizando la opción de pizarra del zoom para poder ir creandolo juntas, en este fuimos plasmando como queriamos que fuera nuestra página. Lo testeamos con nuestra familia e identificamos que comprendian a gran escala la idea y el funcionamiento.Nos aconsejaron tener especial cuidado con la jerarquía de los elementos y la convinación de fondo negro con letras blancas.
-link de prototipos de baja fidelidad:
+link de prototipos de baja fidelidad: carpeta prototipo papel
+link figma: https://www.figma.com/file/WleMCXvozMLmdBv4RQcled/Rick-and-Morty-Memory-match?node-id=0%3A1
 Posteriormente creamos nuestro prototipo en Figma, y pedimos el feedback de nuestras compañeras. Nos recomendaron que identificaramos más claramente el papel de los botones de los personajes como opciones, poniendoles el nombre de cada uno sobre la imagen. Crear un menu para que fuera más interactiva y tener un botón para mostrar resultados. Con estas sugerencias, procedimos a crear nuestra página web perfeccionando su diseño.
  Simuláneamente al análisis de nuestros usuarios, procedimos a realizar nuestras historias de usuarios. Realizamos nuestra investigaciòn con varias personas, a las cuales nos referiremos como Pedro Perez.
- Pedro Perez tiene rol de usuario, su objetivo es jugar un memory match de la temàtica de Rick y Morty y su motivaciòn es divertirse y entretenerse en su tiempo libre con un juego con tematica de una serie que le gusta.
-  Como Pedro Perez quiero jugar el memory match de rick and morty para divertirme en mi tiempo libre. 
-Como criterio de acertaciòn identificamos:
+ Pedro Pérez tiene rol de usuario, su objetivo es jugar un memory match de la temática de Rick y Morty y su motivación es divertirse y entretenerse en su tiempo libre con un juego con temática de una serie que le gusta.
+  Como Pedro Pérez quiero jugar el memory match de Rick and Morty para divertirme en mi tiempo libre. 
+Como criterio de aceptación identificamos:
 *el usuario debe elegir su personaje favorito, en caso contrario no continua el juego
 *el usuario debe elegir el nivel de dificultad, en caso contrario no prosigue el juego(no desarollamos esta)
 *el usuario debe elegir las cartas en pares e intentar que coincidan, en caso contrario, debera seguir intentandolo hasta lograrlo y el marcador de movimientos ira en aumento.
-*el usuario debe elegir las cartas correctas, ganando el juego, visualizando su puntuaciòn y mensaje de felicitaciòn.
-
+*el usuario debe elegir las cartas correctas, ganando el juego, visualizando su puntuación y mensaje de felicitación.
+Como definición de terminado nos planteamos:
+*tener una página de bienvenida
+*tener la opción de elegir entre Rick y Morty
+*tener una data de rick y una de Morty
+*tener contador de movimiento
+*tener contador de puntuación
+*tener popup con mensaje de felicitaciones
+*tener boton de reiniciar y botón de home
+Consideramos que cumplimos con nuestra definicion de terminado
+Una vez terminada nuestra página, la testeamos con muchas personas, incluidas nuestras compañeras de bootcamp y familiares y amigos. Nos indicaron que entendieron la dinámica de la página y que disfrutaron el juego, por lo que creemos que cumplimos nuestros objetivos. Aunque somos consciente que puede perfeccionarse mucho más, por lo que seguiremos estudiando y aprendiendo para poder hacer un mejor trabajo en el futuro.
+Respecto a nuestras pruebas unitarias, consideramos que no las enfrentamos de una forma eficiente, ya que primero nos enfocamos en que nuestra página funcionara y no fuimos testeando función por función. Una vez terminado todo, comenzamos a pasar los test y estos no tenian el coverage esperado, por lo que comenzamos a realizar modificaciones para intentar que pasara. En esta ocasión, fuimos a pedir ayuda a nuestros coaches para no repetir errores pasados, y nos hicieron reflexionar si valía la pena para nosotras refacturizar todo nuestro código para poder testearlo. Llegamos a la conclusión que debiamos seguir avanzando y seguir desarrollando este objetivo de aprendizaje en nuestro próximo proyecto, junto al perfeccionamiento de las historias de usuarios.
