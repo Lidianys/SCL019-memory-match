@@ -13,4 +13,12 @@ Nuestro proceso de UX se baso en varias etapas:
 4- Prototipado:Realizamos un prototipo primeramente de baja fidelidad, utilizando la opción de pizarra del zoom para poder ir creandolo juntas, en este fuimos plasmando como queriamos que fuera nuestra página. Lo testeamos con nuestra familia e identificamos que comprendian a gran escala la idea y el funcionamiento.Nos aconsejaron tener especial cuidado con la jerarquía de los elementos y la convinación de fondo negro con letras blancas.
 link de prototipos de baja fidelidad:
 Posteriormente creamos nuestro prototipo en Figma, y pedimos el feedback de nuestras compañeras. Nos recomendaron que identificaramos más claramente el papel de los botones de los personajes como opciones, poniendoles el nombre de cada uno sobre la imagen. Crear un menu para que fuera más interactiva y tener un botón para mostrar resultados. Con estas sugerencias, procedimos a crear nuestra página web perfeccionando su diseño.
- Simultaneamente al analisis de nuestros usuarios, procedimos a realizar nuestras historias de 
+ Simuláneamente al análisis de nuestros usuarios, procedimos a realizar nuestras historias de usuarios. Realizamos nuestra investigaciòn con varias personas, a las cuales nos referiremos como Pedro Perez.
+ Pedro Perez tiene rol de usuario, su objetivo es jugar un memory match de la temàtica de Rick y Morty y su motivaciòn es divertirse y entretenerse en su tiempo libre con un juego con tematica de una serie que le gusta.
+  Como Pedro Perez quiero jugar el memory match de rick and morty para divertirme en mi tiempo libre. 
+Como criterio de acertaciòn identificamos:
+*el usuario debe elegir su personaje favorito, en caso contrario no continua el juego
+*el usuario debe elegir el nivel de dificultad, en caso contrario no prosigue el juego(no desarollamos esta)
+*el usuario debe elegir las cartas en pares e intentar que coincidan, en caso contrario, debera seguir intentandolo hasta lograrlo y el marcador de movimientos ira en aumento.
+*el usuario debe elegir las cartas correctas, ganando el juego, visualizando su puntuaciòn y mensaje de felicitaciòn.
+
