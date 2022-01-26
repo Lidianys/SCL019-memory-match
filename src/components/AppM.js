@@ -62,9 +62,8 @@ function checkCards (e){
      card.classList.remove("flipped");
      card.style.pointerEvents= "none";
      points++;
-
      puntuacion.textContent = points/2;
-     
+
     });
    }
    else {
@@ -88,11 +87,6 @@ function checkCards (e){
         popup.style.display = "none";
         restart();
       });
-     
-       close.addEventListener("click",()=>{
-         popup.style.display = "none";
-       } );
-      
     }
  }
   //Se reinicia todo!

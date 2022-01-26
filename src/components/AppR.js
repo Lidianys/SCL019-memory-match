@@ -2,16 +2,10 @@
 import Rick from '../data/Rick/Rick.js';
 let points = 0;
 let elementsItems= Rick.items;
+const puntuacion = document.querySelector(".puntuacion");
+const movimientos = document.querySelector(".movimientos");
 
-//const movimientos = document.querySelector(".movimientos");
-
-//let moves = 0;
-//link text
-/*const randomize = () =>{
-  elementsItems.sort (()=> Math.random()-0.5);
-  return elementsItems;
-};*/
-
+let moves = 0;
  // Function to shuffle the array content
     function shuffle(elementsItems) {
       for (let i = elementsItems.length - 1; i > 0; i--) {
@@ -45,27 +39,26 @@ let elementsItems= Rick.items;
         //adjuntamos la imagen a la tarjeta
         front.src=elementsItems[i].image;
        
-        card.addEventListener("click",()=>{
+        card.addEventListener("click",(e)=>{
           card.classList.toggle("toggleCard"); 
-          card.classList.add("flipped");
-           //moves++;
-           //movimientos.textContent = moves; 
-        checkCards();
+           moves++;
+           movimientos.textContent = moves; 
+        checkCards(e);
          });
         board.appendChild(card); 
       }
       return board;
     }
 
-const checkCards = ()=>{ 
+const checkCards = (e)=>{ 
+  const clickCard= e.target;
+  clickCard.classList.add("flipped");
   const flippedCards = document.querySelectorAll(".flipped");
   const toggleCard = document.querySelectorAll(".toggleCard");
-  const puntuacion = document.querySelector(".puntuacion");
 
  
  //logic
  if(flippedCards.length === 2){
-  console.log("hola point", points);
    if(flippedCards[0].getAttribute("id") === flippedCards[1].getAttribute("id")){
     flippedCards.forEach((card) => {
      card.classList.remove("flipped");
@@ -85,32 +78,26 @@ const checkCards = ()=>{
      popUp();
     }
  }
- 
- console.log("hola puntiacion",puntuacion);
- return puntuacion;
 }
 
 const popUp = () => {
   const button = document.querySelector("button"); 
   const popup = document.querySelector(".popup-wrapper");
   const close = document.querySelector(".popup-close");
+  const home =document.querySelector("home");
 
   popup.style.display ="block";
   button.addEventListener("click",()=> {
    
     popup.style.display = "none";
-    //restart();
-  });
- 
-   close.addEventListener("click",()=>{
-     popup.style.display = "none";
-   } );
+    restart();
+  });  
 }
 
 
-   /*Se reinicia todo!
+   /*Se reinicia todo!*/
   const restart = () =>{
-    
+    shuffle(elementsItems);  
     let front = document.querySelectorAll(".front");
     let card = document.querySelectorAll(".card");
     points=0;
@@ -121,7 +108,7 @@ const popUp = () => {
       card[index].classList.remove("toggleCard");
       card[index].style.pointerEvents= "all";
       front[index].src=item.image;
-      card[index].setAttribute ("name",item.id);
+      card[index].setAttribute ("id",item.id);
     });
-}*/
+}
 export default AppR;
