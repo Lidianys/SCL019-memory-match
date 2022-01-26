@@ -5,6 +5,9 @@
     box-sizing: border-box;
     
 }
+.entry-content .mejs-container .mejs-controls {
+    background: #932;
+}
 header {
     display: flex;
     align-items: center;
@@ -58,8 +61,9 @@ main{
     font-size: 1.1em;
     padding-left: 2.5em;
     padding-right: 2.5em;
+    font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
 }
-/*botones de home*/
+    /*botones de home*/
 .buttons{
    width: 100%;
    text-align:center;
@@ -86,6 +90,8 @@ main{
   }
 .name{ 
     font-size:1.5em;
+    font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 /*copyright */
 .copyright{
@@ -94,6 +100,7 @@ main{
     padding-bottom: 0em;
     background-color: black;
     padding-top: 1em;
+    font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
 }
  /*fondo de  paginas de memory match*/
  .second {

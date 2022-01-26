@@ -6,12 +6,6 @@ const puntuacion = document.querySelector(".puntuacion");
 const movimientos = document.querySelector(".movimientos");
 
 let moves = 0;
-//link text
-/*const randomize = () =>{
-  elementsItems.sort (()=> Math.random()-0.5);
-  return elementsItems;
-};*/
-
  // Function to shuffle the array content
     function shuffle(elementsItems) {
       for (let i = elementsItems.length - 1; i > 0; i--) {
