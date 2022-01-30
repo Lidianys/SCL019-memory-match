@@ -83,8 +83,6 @@ const checkCards = (e)=>{
 const popUp = () => {
   const button = document.querySelector("button"); 
   const popup = document.querySelector(".popup-wrapper");
-  const close = document.querySelector(".popup-close");
-  const home =document.querySelector("home");
 
   popup.style.display ="block";
   button.addEventListener("click",()=> {
