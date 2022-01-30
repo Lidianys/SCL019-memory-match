@@ -5,9 +5,6 @@
     box-sizing: border-box;
     
 }
-.entry-content .mejs-container .mejs-controls {
-    background: #932;
-}
 header {
     display: flex;
     align-items: center;
@@ -22,7 +19,7 @@ header {
   padding-top: 0em;
   text-align: center;
   justify-content: center;
- display: flex;
+  display: flex;
 
 }
 img#RyMimag{
@@ -102,6 +99,8 @@ main{
     padding-top: 1em;
     font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
 }
+
+
  /*fondo de  paginas de memory match*/
  .second {
     display: flex;
@@ -114,9 +113,8 @@ main{
     align-items: center;
     flex-direction: column;
 }
-
+/*contenedor de las cartas*/
 .board{
-    display: grid;
     width: 32.5em;
     height: 32.5em;
     margin: auto;
@@ -135,12 +133,7 @@ main{
     transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: .25em .25em .25em rgba(160, 211, 160, 0.5);
     border-radius: .75em;
-    align-items: center;
-    justify-content: center;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-   
 }
 .front, 
 .back{
@@ -154,7 +147,6 @@ main{
     background-attachment: fixed;
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
 }
 .front{
     -webkit-transform: rotateY(-180deg);
@@ -165,7 +157,7 @@ main{
     background-image: url(img/back-face.png);
     backface-visibility: hidden;
     background-size:cover;
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     -webkit-transform: rotateY(0);
     -webkit-transform-style: preserve-3d;

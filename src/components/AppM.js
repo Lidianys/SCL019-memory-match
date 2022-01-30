@@ -1,5 +1,5 @@
 import Morty from '../data/Morty/Morty.js';
-export default App;
+
 let elementsItems= Morty.items;
 //*******desordenamos la data ************/
 const board = document.querySelector(".board");
@@ -106,4 +106,4 @@ function checkCards (e){
     });
   }
 }
-
+export default App;

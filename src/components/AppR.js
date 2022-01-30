@@ -1,12 +1,12 @@
 
 import Rick from '../data/Rick/Rick.js';
 let points = 0;
+let moves = 0;
 let elementsItems= Rick.items;
 const puntuacion = document.querySelector(".puntuacion");
 const movimientos = document.querySelector(".movimientos");
 
-let moves = 0;
- // Function to shuffle the array content
+// Function to shuffle the array content
     function shuffle(elementsItems) {
       for (let i = elementsItems.length - 1; i > 0; i--) {
         // Generate random number
@@ -23,8 +23,9 @@ let moves = 0;
 /**********FUNCION APP****************/  
    const AppR = () =>{
      shuffle(elementsItems);  
-      const board = document.createElement("div");
-      board.className = "board";
+      //const board = document.createElement("div");
+      const board = document.querySelector(".board");
+      //board.className = "board";
       
       for(let i=0;i< elementsItems.length ;i++){
         const card = document.createElement("div"); //creamos la tarjeta
@@ -33,6 +34,7 @@ let moves = 0;
          card.className = "card";
          front.className = "front";
          back.className ="back";
+        board.appendChild(card);
         card.appendChild(front);
         card.appendChild(back);
         card.setAttribute("id", elementsItems[i].id);
@@ -45,7 +47,7 @@ let moves = 0;
            movimientos.textContent = moves; 
         checkCards(e);
          });
-        board.appendChild(card); 
+        //board.appendChild(card); 
       }
       return board;
     }
@@ -81,7 +83,7 @@ const checkCards = (e)=>{
 }
 
 const popUp = () => {
-  const button = document.querySelector("button"); 
+  const button = document.querySelector(".button"); 
   const popup = document.querySelector(".popup-wrapper");
 
   popup.style.display ="block";
