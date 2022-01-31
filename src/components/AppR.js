@@ -19,8 +19,9 @@ let points = 0;
 /**********FUNCION APPR****************/  
    const AppR = () =>{
      shuffle(elementsItems);  
-      const board = document.createElement("div");
-      board.className = "board";
+      
+      const board = document.querySelector(".board");
+      
       for(let i=0;i< elementsItems.length ;i++){
         const card = document.createElement("div"); //creamos la tarjeta
         const front = document.createElement("img");
@@ -30,7 +31,7 @@ let points = 0;
          front.className = "front";
          back.className ="back";
         //Le asignamos nuevos nodos hijos a card
-        board.appendChild(card); 
+        board.appendChild(card);
         card.appendChild(front);
         card.appendChild(back);
         card.setAttribute("id", elementsItems[i].id);
@@ -43,7 +44,7 @@ let points = 0;
            movimientos.textContent = moves; 
           checkCards(e);
          });
-        board.appendChild(card); 
+       
       }
       return board;
     }
