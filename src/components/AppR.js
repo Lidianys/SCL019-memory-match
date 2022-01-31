@@ -1,4 +1,5 @@
 import Rick from '../data/Rick/Rick.js';
+<<<<<<< HEAD
 
 let elementsItems= Rick.items;
 const puntuacion = document.querySelector(".puntuacion");
@@ -6,6 +7,15 @@ const movimientos = document.querySelector(".movimientos");
 let moves = 0;
 let points = 0;
  // Función shuffle
+=======
+let points = 0;
+let moves = 0;
+let elementsItems= Rick.items;
+const puntuacion = document.querySelector(".puntuacion");
+const movimientos = document.querySelector(".movimientos");
+
+// Function to shuffle the array content
+>>>>>>> 587c691ed61188dc5b17c8ed6d7199c85ebae1f5
     function shuffle(elementsItems) {
       for (let i = elementsItems.length - 1; i > 0; i--) {
         // Generate random number
@@ -19,8 +29,15 @@ let points = 0;
 /**********FUNCION APPR****************/  
    const AppR = () =>{
      shuffle(elementsItems);  
+<<<<<<< HEAD
       const board = document.createElement("div");
       board.className = "board";
+=======
+      //const board = document.createElement("div");
+      const board = document.querySelector(".board");
+      //board.className = "board";
+      
+>>>>>>> 587c691ed61188dc5b17c8ed6d7199c85ebae1f5
       for(let i=0;i< elementsItems.length ;i++){
         const card = document.createElement("div"); //creamos la tarjeta
         const front = document.createElement("img");
@@ -29,7 +46,11 @@ let points = 0;
          card.className = "card";
          front.className = "front";
          back.className ="back";
+<<<<<<< HEAD
         //Le asignamos nuevos nodos hijos a card
+=======
+        board.appendChild(card);
+>>>>>>> 587c691ed61188dc5b17c8ed6d7199c85ebae1f5
         card.appendChild(front);
         card.appendChild(back);
         card.setAttribute("id", elementsItems[i].id);
@@ -42,7 +63,7 @@ let points = 0;
            movimientos.textContent = moves; 
           checkCards(e);
          });
-        board.appendChild(card); 
+        //board.appendChild(card); 
       }
       return board;
     }
@@ -77,7 +98,7 @@ const checkCards = (e)=>{
 }
 //Ventana Modal que indica que eres ganador
 const popUp = () => {
-  const button = document.querySelector("button"); 
+  const button = document.querySelector(".button"); 
   const popup = document.querySelector(".popup-wrapper");
 
   popup.style.display ="block";

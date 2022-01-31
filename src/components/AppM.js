@@ -1,4 +1,8 @@
 import Morty from '../data/Morty/Morty.js';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 587c691ed61188dc5b17c8ed6d7199c85ebae1f5
 let elementsItems= Morty.items;
 const board = document.querySelector(".board");
 const puntuacion = document.querySelector(".puntuacion");
@@ -90,4 +94,8 @@ function checkCards (e){
     });
   }
 }
+<<<<<<< HEAD
 export default App;
+=======
+export default App;
+>>>>>>> 587c691ed61188dc5b17c8ed6d7199c85ebae1f5
