@@ -1,4 +1,4 @@
-/*todas las páginas*/
+/*Todas las páginas*/
 *{
     margin: 0em;
     padding: 0em;
@@ -11,7 +11,7 @@ header {
     justify-content: center;
     flex-direction: column;
 }
-/*gift de Rick y Morty*/
+/*Gif de Rick y Morty*/
 .barra{
   text-align: center;
   height: 4em;
@@ -28,7 +28,7 @@ img#RyMimag{
     text-align: center;
     display: flex;  
 }
-/*nombre de la serie*/
+/*Nombre de la serie*/
 .title{
    padding: 1.50em;
    text-align: center;
@@ -42,17 +42,17 @@ img#logo{
     text-align: center;
     display: flex;
 }
-/*fondo de home*/
+/*Fondo del home*/
 body#portada{
      background-image: url(img/fondoEstrellas.jpg);
      height: 100vh;
      background-size: cover ;
 }
-/*main de home*/
+/*Main de home*/
 main{
     text-align: center;
 } 
-/*texto en home*/
+/*Texto en home*/
 .text{
     color: white;
     font-size: 1.1em;
@@ -60,7 +60,7 @@ main{
     padding-right: 2.5em;
     font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
 }
-    /*botones de home*/
+/*Botones de home Rick y Morty*/
 .buttons{
    width: 100%;
    text-align:center;
@@ -70,9 +70,7 @@ main{
    justify-content: space-around;
    flex-direction: row;
    flex-wrap: wrap;
-   
 }
-
 .Rick{
   width: 10em;
   height:10em;  
@@ -90,7 +88,7 @@ main{
     font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
-/*copyright */
+/*Copyright */
 .copyright{
     color: white;
     text-align: center;
@@ -99,9 +97,7 @@ main{
     padding-top: 1em;
     font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
 }
-
-
- /*fondo de  paginas de memory match*/
+ /*Fondo de  páginas de memory match*/
  .second {
     display: flex;
     background-image: url(img/fondoCartas.jpg);
@@ -113,7 +109,7 @@ main{
     align-items: center;
     flex-direction: column;
 }
-/*contenedor de las cartas*/
+/*Tablero*/
 .board{
     width: 32.5em;
     height: 32.5em;
@@ -122,8 +118,8 @@ main{
     flex-wrap: wrap;
     perspective: 62.5em;
     padding: .625em;
-    
 }
+/*Carta - div*/
 .card{
     width: calc(25% - .625em);
     height: calc(33.333% - .625em);
@@ -135,6 +131,7 @@ main{
     border-radius: .75em;
     display: flex;
 }
+/*Imagen frontal y trasera de las cartas*/
 .front, 
 .back{
     width: 100%;
@@ -167,6 +164,7 @@ main{
     transform: rotateY(180deg);
    
 }
+/*Barra de movimiento y puntuación*/
 .barra-movimiento{
     background-color: rgba(34, 250, 6, 0.589);
     display: inline-flex;
@@ -183,7 +181,7 @@ main{
 .material-icons m-36{
    background-color: turquoise;
 }
-/*css de popup */
+/*Ventana Modal */
 button {
     display: block;
     margin: 1.25em auto;
@@ -192,13 +190,11 @@ button {
     border: 0;
     padding: .375em .625em;
     cursor: pointer;
-}
-    
+}   
 button:hover {
     background: rgb(207, 220, 226);
     transition: all 0.2s;
 }
-
 .popup-wrapper {
     display:none;
     z-index: 100;
@@ -209,7 +205,6 @@ button:hover {
     width: 100%;
     height: 100%;
 }
- 
 .popup {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
@@ -220,22 +215,17 @@ button:hover {
     padding: 0.5em;
     position: relative;
 }
- 
 .popup a {
-    /*background: salmon;*/
     color: white;
     text-decoration: none;
-    /*padding: .375em .625em;*/
     margin: 1.875em auto;
     display: block;
     width: 50%;
 }
- 
 .popup a:hover {
     background: rgb(68, 202, 226);
     transition: all 0.2s;
 }
- 
 .gift{
     width: 17.5em;
     height: 17.5em;
@@ -249,7 +239,7 @@ header nav {
 h1{
     color: aliceblue;
 }
-/*responsive*/
+/*Media query - responsive*/
 @media screen and (max-width:800px){
 	body#portada {
 		font-size:80%; /* achicamos la fuente en pantallas pequeñas */
