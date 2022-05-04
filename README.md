@@ -14,7 +14,7 @@
 
 Nuestro proyecto es un Memory Match con la temática de la serie Rick y Morty, con el fin de que el usuario se divierta y entretenga. Nuestros usuarios objetivos son los fánaticos de la serie, ya que se hacen varias referencias que encontrarán interesantes, aunque no se limita solo a ellos, cualquier persona puede usarla. 
 
-<img src="./src/img/portadaRM.jpg" alt="Imagen final del sitio web" width="500" height="500"/>
+<img src="./src/img/portadaRM.jpg" alt="Imagen final del sitio web" width="800" height="500"/>
 
 ## 2. Etapas del proceso UX
 
@@ -75,8 +75,8 @@ Respecto a nuestras pruebas unitarias, consideramos que no las enfrentamos de un
 
 ## 6. Imágenes del proyecto terminado
 
-<img src="./src/img/cartasRM.jpg" alt="Cartas sin voltear" width="500" height="500"/>
+<img src="./src/img/cartasRM.jpg" alt="Cartas sin voltear" width="800" height="500"/>
 
-<img src="./src/img/cartasR.jpg" alt="Rick ganador" width="500" height="500"/>
+<img src="./src/img/cartasR.jpg" alt="Rick ganador" width="800" height="500"/>
 
-<img src="./src/img/cartasM.jpg" alt="Morty ganador" width="500" height="500"/>
+<img src="./src/img/cartasM.jpg" alt="Morty ganador" width="800" height="500"/>
